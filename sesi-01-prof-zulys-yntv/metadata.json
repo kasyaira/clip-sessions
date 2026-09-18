@@ -1,0 +1,25 @@
+{
+  "sesi": "sesi-01-prof-zulys-yntv",
+  "tanggal": "2026-09-18",
+  "sumber": {
+    "judul": "Podcast Prof. Zulys (YNTV)",
+    "url": "https://youtu.be/z07M-QFMV04",
+    "durasi_total": "78.2 menit"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "blur-background (panel video + background blur)",
+    "caption": "popup 2-5 kata, highlight kuning kata aktif",
+    "watermark": "ofkiehme"
+  },
+  "clips": [
+    { "file": "clip-01-bukti-tuhan-bigbang-termodinamika.mp4", "topik": "Bukti Tuhan dari Big Bang & termodinamika", "durasi_detik": 88.0, "part_sumber": "A" },
+    { "file": "clip-02-minuman-panas-gak-boleh-ditiup.mp4", "topik": "Minuman panas ditiup - pH buffer", "durasi_detik": 130.0, "part_sumber": "A" },
+    { "file": "clip-03-statistik-100-persen-selamat.mp4", "topik": "Statistik 100% selamat", "durasi_detik": 65.0, "part_sumber": "A" },
+    { "file": "clip-04-kenapa-atlet-gigit-medali-emas.mp4", "topik": "Kenapa atlet gigit medali emas", "durasi_detik": 38.1, "part_sumber": "A" },
+    { "file": "clip-05-tubuh-kenal-obat-dari-bentuknya.mp4", "topik": "Tubuh mengenal obat dari bentuknya", "durasi_detik": 44.1, "part_sumber": "B" },
+    { "file": "clip-06-partikel-tuhan-dan-konspirasi.mp4", "topik": "Partikel Tuhan & konspirasi", "durasi_detik": 53.1, "part_sumber": "B" },
+    { "file": "clip-07-profesor-yang-dulu-benci-kimia.mp4", "topik": "Profesor yang dulu benci kimia", "durasi_detik": 91.1, "part_sumber": "C" }
+  ]
+}
