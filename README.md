@@ -15,6 +15,8 @@ Di dalam tiap folder sesi:
 | Sesi | Sumber | Jumlah Clip |
 |------|--------|-------------|
 | [sesi-01-prof-zulys-yntv](./sesi-01-prof-zulys-yntv) | Podcast Prof. Zulys (YNTV) — youtu.be/z07M-QFMV04 | 7 clip |
+| [sesi-02-podcast-lari-polusi-jakarta](./sesi-02-podcast-lari-polusi-jakarta) | Podcast lari saat polusi Jakarta — untitled.mp4 | 1 clip (utuh 2:38) |
+| [sesi-03-podcast-kesehatan-pencernaan](./sesi-03-podcast-kesehatan-pencernaan) | Podcast kesehatan & pencernaan — untitled2.mp4 | 1 clip (utuh 3:37) |
 
 ## Spesifikasi Output
 

@@ -1,0 +1,23 @@
+{
+ "sesi": "sesi-03-podcast-kesehatan-pencernaan",
+ "tanggal": "2026-09-20",
+ "sumber": {
+  "judul": "Podcast kesehatan & pencernaan (bahan lokal untitled2.mp4)",
+  "durasi_total": "3:37"
+ },
+ "spesifikasi": {
+  "resolusi": "1080x1920",
+  "fps": 30,
+  "layout": "kertas krem + grain (video card tengah, posisi dinaikkan)",
+  "caption": "popup karaoke Bahasa Indonesia (subtitle sama persis dengan video)",
+  "watermark": "ofkiehme"
+ },
+ "clips": [
+  {
+   "file": "clip-01-kesehatan-pencernaan.mp4",
+   "topik": "Kesehatan pencernaan: BAB, sumbatan usus, dispepsi & kebiasaan menahan",
+   "durasi_detik": 217.3,
+   "part_sumber": "klip utuh (0.0 - 216.85)"
+  }
+ ]
+}
