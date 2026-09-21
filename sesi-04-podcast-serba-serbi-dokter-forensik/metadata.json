@@ -1,0 +1,79 @@
+{
+ "sesi": "sesi-04-podcast-serba-serbi-dokter-forensik",
+ "tanggal": "2026-09-21",
+ "sumber": {
+  "judul": "Serba Serbi Dokter Forensik — Podcast Raditya Dika",
+  "channel": "Raditya Dika",
+  "url": "youtu.be/g3Zd0F7CSuc",
+  "durasi_total": "56:00"
+ },
+ "spesifikasi": {
+  "resolusi": "1080x1920",
+  "fps": 30,
+  "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+  "caption": "popup karaoke Bahasa Indonesia, 2-5 kata per grup, kata aktif highlight kuning",
+  "watermark": "@ofkiehme"
+ },
+ "clips": [
+  {
+   "file": "clip-01-peran-objektivitas-dokter-forensik.mp4",
+   "topik": "Peran & objektivitas dokter forensik: medikolegal, kelalaian medis, review rekam medis, berpihak pada kebenaran",
+   "durasi_detik": 459.5,
+   "part_sumber": "0.0 - 459.5"
+  },
+  {
+   "file": "clip-02-jadi-dokter-forensik-otopsi-pertama.mp4",
+   "topik": "Jalur kuliah & stase, terinspirasi CSI, otopsi pertama mayat 5 hari di sungai, pelajaran profesionalisme",
+   "durasi_detik": 151.9,
+   "part_sumber": "459.5 - 611.4"
+  },
+  {
+   "file": "clip-03-sisi-mental-keluarga-korban-keseharian.mp4",
+   "topik": "Sisi mental: kisah keluarga korban, kasus banjir bandang & identifikasi korban, S2 Magister Hukum Kesehatan, tipikal minggu (ngajar, on-call, konsul)",
+   "durasi_detik": 257.0,
+   "part_sumber": "611.4 - 868.4"
+  },
+  {
+   "file": "clip-04-visum-luka-buatan-sendiri-vs-orang-lain.mp4",
+   "topik": "Visum: beda luka buatan sendiri vs orang lain, cara menulis kesimpulan visum, klasifikasi luka ringan/sedang/berat",
+   "durasi_detik": 253.9,
+   "part_sumber": "868.4 - 1122.3"
+  },
+  {
+   "file": "clip-05-menangani-jenazah-permintaan-otopsi.mp4",
+   "topik": "Permintaan visum dari polisi, jenis luka tajam/tumpul, tanda perlawanan & bekas kuku, kematian mendadak vs wajar, permintaan otopsi & pemeriksaan menyeluruh",
+   "durasi_detik": 317.7,
+   "part_sumber": "1122.3 - 1440.0"
+  },
+  {
+   "file": "clip-06-saksi-ahli-di-pengadilan.mp4",
+   "topik": "Saksi ahli di pengadilan (kasus luka bacok), membuktikan penyebab kematian, pukulan dada sampai paru mengembang, ilmu bela diri di jalanan",
+   "durasi_detik": 245.1,
+   "part_sumber": "1440.0 - 1685.1"
+  },
+  {
+   "file": "clip-07-prosedur-otopsi-lengkap.mp4",
+   "topik": "SOP otopsi lengkap: urutan pemeriksaan, rongga dada, jantung & paru, tahap penyembuhan luka, otak paling akhir & dikembalikan ke rongga dada",
+   "durasi_detik": 494.4,
+   "part_sumber": "1685.1 - 2179.5"
+  },
+  {
+   "file": "clip-08-exhumasi-menggali-kubur.mp4",
+   "topik": "Exhumasi (pengalian kubur), mumifikasi, patah tulang sebelum vs sesudah kematian, pemeriksaan mikroskopis, kasus bayi prematur yang dikira kelalaian",
+   "durasi_detik": 367.3,
+   "part_sumber": "2179.5 - 2546.8"
+  },
+  {
+   "file": "clip-09-berpikir-soal-kematian.mp4",
+   "topik": "Cara pandang soal kematian, pesan jangan berbuat jahat & jangan menunda tobat, kasus perselingkuhan yang terbongkar dari pemeriksaan forensik",
+   "durasi_detik": 452.4,
+   "part_sumber": "2546.8 - 2999.2"
+  },
+  {
+   "file": "clip-10-pelaku-terdekat-keseharian-hobi.mp4",
+   "topik": "Kasus tak terungkap & pelaku biasanya orang terdekat, keseharian setelah otopsi, hobi baca Mahabharata, musik saat otopsi, dokumentasi foto/video, kabar film pertama",
+   "durasi_detik": 360.7,
+   "part_sumber": "2999.2 - 3359.9"
+  }
+ ]
+}
