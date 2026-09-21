@@ -18,6 +18,7 @@ Di dalam tiap folder sesi:
 | [sesi-02-podcast-lari-polusi-jakarta](./sesi-02-podcast-lari-polusi-jakarta) | Podcast lari saat polusi Jakarta — untitled.mp4 | 1 clip (utuh 2:38) |
 | [sesi-03-podcast-kesehatan-pencernaan](./sesi-03-podcast-kesehatan-pencernaan) | Podcast kesehatan & pencernaan — untitled2.mp4 | 1 clip (utuh 3:37) |
 | [sesi-04-podcast-serba-serbi-dokter-forensik](./sesi-04-podcast-serba-serbi-dokter-forensik) | Podcast Serba Serbi Dokter Forensik — Raditya Dika — youtu.be/g3Zd0F7CSuc | 10 clip (utuh 56:00, 1 topik tuntas = 1 clip) |
+| [sesi-05-karnaval-pekalongan-felix-siauw](./sesi-05-karnaval-pekalongan-felix-siauw) | Bahas Karnaval Pekalongan "Satanic" — Felix Siauw — youtu.be/Jd5hpeoSSqA | 8 clip (utuh 24:10, 1 topik tuntas = 1 clip) |
 
 ## Spesifikasi Output
 
