@@ -333,3 +333,62 @@ bocor di repo publik dan **langsung me-revoke-nya**. Akibatnya di sesi-10:
   — terbukti cukup untuk memastikan word-highlight jalan.
 - gh-push-big.sh sekarang otomatis hapus work dir gh-push setelah tiap
   push (§11) — tidak perlu manual lagi.
+
+---
+
+# ADDENDUM SESI-11 (penyelesaian sesi-10: upload 5 klip Felix NPD)
+
+> User kasih token PAT baru (lama di-revoke, lihat §14) + minta clip
+> youtu.be/3SkVPuJnGBI. oEmbed judulnya ternyata = video yang SAMA dengan
+> sesi-10 — dan hasil kerja sesi-10 MASIH ADA (lihat §16). Sesi ini tidak
+> download/transkrip/render ulang sama sekali, cukup verifikasi + upload.
+
+## 16. PENTING: folder upload/ SELAMAT dari reset sandbox
+
+Direktori `/home/z/my-project/upload/` adalah mount jaringan (ossfs) yang
+**TIDAK ikut ter-reset** bersama sandbox. Di sesi-11 ditemukan `upload/ofc-clip-kit/`
+masih berisi DIRECTORI KERJA SESI-10 UTUH 1.9GB: whisper.cpp ter-build + model
+small 487MB + node_modules + chrome headless shell + out/ (5 klip final, transcript
+1713 kata, out/data) + cache-pack 54MB.
+
+**Langkah pertama setiap sesi baru: CEK dulu `upload/` sebelum kerja apapun.**
+Kalau ada `upload/ofc-clip-kit/` dari sesi lalu, pulihkan dengan rsync (§17)
+daripada build dari nol / render ulang.
+
+Konfirmasi video = video sesi lama: oEmbed ID-nya, cocokkan judulnya dengan
+metadata render log / CARA-KERJA addendum sebelumnya.
+
+## 17. Copy dari upload/ KE root project: pakai RSYNC, jangan mv
+
+`mv upload/ofc-clip-kit ofc-clip-kit` = COPY antar-mount (~4.4MB/s), tool call
+ke-timeout di 120s dan menyisakan copy setengah jadi. Yang benar:
+
+```
+rsync -a --exclude='out/' --exclude='clip-kit-cache.tar.gz' \
+  --exclude='out-render-*.log' --exclude='out-seg*.log' --exclude='.git' \
+  upload/ofc-clip-kit/ ofc-clip-kit/
+```
+
+- rsync lanjut otomatis dari file yang sudah tersalin (aman dipanggil ulang).
+- `out/` dibiarkan di upload/ — klip final & transcript bisa dibaca/di-upload
+  langsung dari path upload/ (gh-upload.mjs terima path absolut).
+- Setelah rsync: tulis token baru ke `work/.ghtoken`, lalu `bootstrap.sh`
+  (langsung skip semua karena node_modules + whisper + chrome sudah ada).
+
+## 18. Verifikasi ulang klip warisan sebelum upload (sesi-11)
+
+Sebelum upload klip hasil sesi lama, cek cepat (semua lolos di sesi-11):
+1. ffprobe tiap klip: 1080x1920, 30fps, stream audio aac ada, durasi masuk akal.
+2. QA piksel (§15): ffmpeg ekstrak 1 frame per klip + PIL hitung piksel kuning
+   #FFD60A di area subtitle — >50 piksel = word-highlight jalan.
+3. Transcript warisan: cek jumlah kata + timestamp akhir ≈ durasi video.
+
+## 19. Metode upload terkonfirmasi ulang (sesi-11)
+
+- 33.4MB / 25.5MB / 27.8MB → Contents API PUT langsung OK.
+- 47.4MB / 49.6MB → Contents API 422 → Git Blobs API 422 → `gh-push-big.sh`
+  SUKSES (cepat, beberapa puluh detik saja — catatan lazy-fetch 1.4GB di §11
+  tidak terjadi lagi di sesi-11).
+- Upload klip satu-satu tetap urut topik terkuat dulu (§11).
+- README.md repo perlu dirapikan tabel sesinya (belum di-update sejak sesi-05;
+  sesi-11 sudah lengkapi s/d sesi-10 — jaga tetap ter-update tiap sesi).
