@@ -1,0 +1,50 @@
+{
+  "sesi": "sesi-10-menolak-pakar-npd",
+  "tanggal": "2026-09-26",
+  "sumber": {
+    "judul": "Menolak Pakar Termasuk NPD Nggak Sih? - Felix Siauw",
+    "channel": "Felix Siauw",
+    "url": "youtu.be/3SkVPuJnGBI",
+    "durasi_total": "13:02"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "catatan": "5 klip membagi habis seluruh video 0-782s tanpa gap, batas potong di batas kalimat persis via words-around. Render & QA piksel selesai di sesi-10 (25 Sep), upload tertunda karena PAT lama di-revoke GitHub secret scanning — diselesaikan di sesi-11 dengan token baru."
+  },
+  "clips": [
+    {
+      "file": "clip-01-mitos-narsisus.mp4",
+      "topik": "Asal kata narsis dari mitos Yunani: penyair Roma Ovid tahun ke-8 Masehi menulis Metamorphosis Book 3 tentang pemuda tampan Narsisus yang menolak cinta nimp Echo lalu dihukum dewa jatuh cinta pada bayangan dirinya sendiri di kolam sampai mati, akar kata narsis; lalu definisi NPD Narcissistic Personality Disorder: gangguan kepribadian pola perilaku jangka panjang - suka diri sendiri berlebihan, butuh dipuji/divalidasi, dan tidak peduli perasaan orang lain, sering memanipulasi orang sekitar sejak awal masa dewasa",
+      "durasi_detik": 221.1,
+      "part_sumber": "0.00 - 220.62"
+    },
+    {
+      "file": "clip-02-ceklist-9-kriteria-npd.mp4",
+      "topik": "Checklist 9 kriteria NPD versi DSM (buku pedoman diagnosis) - tidak bisa self-claim apalagi mengklaim orang lain, minimal harus punya 5 dari 9: (1) merasa penting berlebihan melebih-lebihkan pencapaian, (2) pikiran diisi fantasi kesuksesan kekuasaan kepintaran kecantikan, (3) merasa diri spesial hanya dipahami orang berstatus tinggi, (4) butuh kekaguman berlebihan, (6) eksploitatif memanfaatkan orang lain, (7) miskin empati masa bodoh perasaan orang lain, (8) sering cemburu atau merasa dicemburui, (9) arogan dan angkuh; ditutup candaan menceklist ke sosok Netanyahu",
+      "durasi_detik": 202.5,
+      "part_sumber": "220.62 - 422.62"
+    },
+    {
+      "file": "clip-03-npd-sulit-disembuhkan.mp4",
+      "topik": "Kenapa NPD sulit disembuhkan: penderitanya menutup diri untuk berkembang karena merasa dirinya sudah sempurna - kalau ada yang salah itu salah kamu bukan aku; dokter di Instagram bilang NPD tidak bisa disembuhkan total tapi gejalanya bisa dikelola karena sudah pola kepribadian yang mengakar; tantangannya: tidak sadar diri bermasalah, sulit terima kritik, terapi baru dimulai kalau sudah kena tekanan hebat seperti kehilangan pekerjaan atau pasangan; bahaya besar kalau NPD menimpa kepala negara",
+      "durasi_detik": 139.2,
+      "part_sumber": "422.62 - 561.36"
+    },
+    {
+      "file": "clip-04-islam-melatih-selfless.mp4",
+      "topik": "Islam melatih selfless: menjadi muslim berarti latihan tidak mengutamakan diri sendiri; mungkin sebagian checklist NPD ada sedikit di diri kita seperti senang dipuji atau bahasan viral soal selfie yang berlebihan seperti narsisus; tapi Alhamdulillah dalam Islam kita dilatih terus - habis solat justru istighfar padahal baru saja menunaikan kewajiban menyembah Allah, Allah di setiap ayat melatih kita untuk humble karena selfless adalah syarat untuk bisa menyembah Allah",
+      "durasi_detik": 100.1,
+      "part_sumber": "561.79 - 661.43"
+    },
+    {
+      "file": "clip-05-kita-cuma-hamba-allah.mp4",
+      "topik": "Kita cuma hamba Allah: syahadat sekaligus mengakui Allah kuat dan kita lemah perlu pertolongan, iyyaka na'budu wa iyyaka nasta'in lalu tunjukkan jalan yang lurus; Rasul mengajarkan hikmah milik siapa pun yang menemukannya, orang yang mengkritik kita itu haknya dan bagian orang beruntung (wal-ashri innal insana lafi khusr) - sebab itu hampir mustahil seorang muslim sejati jadi NPD karena penghambaan justru menempatkan diri rendah dan butuh bimbingan Allah; ditutup doa semoga dijauhkan dari kita dan negara kita",
+      "durasi_detik": 120.5,
+      "part_sumber": "661.89 - 781.95"
+    }
+  ]
+}
