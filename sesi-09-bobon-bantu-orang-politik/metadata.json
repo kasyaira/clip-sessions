@@ -1,0 +1,74 @@
+{
+  "sesi": "sesi-09-bobon-bantu-orang-politik",
+  "tanggal": "2026-09-25",
+  "sumber": {
+    "judul": "Bobon Mau Bantu Lebih Banyak Orang Lewat Politik",
+    "channel": "Samuel Christ",
+    "url": "youtu.be/rnqvXYrVw4w",
+    "durasi_total": "51:29"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (mengikuti irama bicara per kata, timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "upgrade_sesi_ini": "highlight per-kata single-active (bukan progresif): hanya kata yang sedang diucap yang kuning — ramp naik 2 frame, tahan 0.3s setelah kata selesai, fade balik 3 frame; ditambah glow kuning halus supaya warna makin keliatan di background terang & gelap"
+  },
+  "clips": [
+    {
+      "file": "clip-01-konten-yang-menyesal.mp4",
+      "topik": "Konten yang pernah Kokon buat viewsnya gede tapi bikin menyesal: review LC Waria di Thailand sampai take down karena malu, review SPA-G dalam negeri juga dihapus, pelajarannya lebih baik take down daripada mempublikasikan yang tidak berdampak baik buat generasi",
+      "durasi_detik": 145.3,
+      "part_sumber": "345.23 - 490.10"
+    },
+    {
+      "file": "clip-02-modal-masak-papua.mp4",
+      "topik": "Ekonomi program masak-masak: luar kota 2-4 kali sebulan tidur cuma 3-4 jam, masak sekali habis 30-40 juta, ke Papua bawa 10 tim tiket pesawat 150-200 juta, adsense cuma 5-20 persen, subsidi silang dari brand deals",
+      "durasi_detik": 186.7,
+      "part_sumber": "636.00 - 822.20"
+    },
+    {
+      "file": "clip-03-papua-paling-membekas.mp4",
+      "topik": "Tempat paling membekas: Papua pedalaman seperti Indonesia baru merdeka 10 tahun, puskemas & rumah sakit dibakar, airstrip dihadang pilot ditembak, jarak 50 km jalan kaki berhari-hari, pembangunan selalu digagalkan separatis karena doktrinnya memisahkan diri dari NKRI",
+      "durasi_detik": 235.8,
+      "part_sumber": "1185.00 - 1420.30"
+    },
+    {
+      "file": "clip-04-gak-ngejar-views-lagi.mp4",
+      "topik": "Views bukan lagi patokan: yang penting tujuan tersampaikan, dokumentasi pelosok diteruskan ke pemerintah pusat sampai dapat atensi Presiden/Wapres/menteri, ngejar followers sampai kapan pun tidak ada habisnya, yang dicari sekarang dampak real",
+      "durasi_detik": 162.5,
+      "part_sumber": "1453.00 - 1615.00"
+    },
+    {
+      "file": "clip-05-tertarik-masuk-politik.mp4",
+      "topik": "Kenapa sempat tertarik masuk politik: sebagai influencer ada batasnya dan terbatas dana pribadi, masuk ranah kebijakan bisa membantu masyarakat lebih luas memakai sumber daya yang harusnya dari rakyat untuk rakyat",
+      "durasi_detik": 124.5,
+      "part_sumber": "1615.00 - 1738.99"
+    },
+    {
+      "file": "clip-06-masyarakat-kecewa-mbg.mp4",
+      "topik": "Pemerintahan sekarang: masyarakat mental block & kecewa tapi silent majority masih banyak, support Presiden Prabowo yang dinilai tidak ada kepentingan pribadi, program MBG & COPDES memang bagus tapi perlu dirapikan sampai bawah karena sering bolong di tengah",
+      "durasi_detik": 180.3,
+      "part_sumber": "1739.13 - 1919.00"
+    },
+    {
+      "file": "clip-07-rahasia-viral-clipping.mp4",
+      "topik": "Rahasia konten viral: ikuti algoritma yang lagi rame, kuncinya detention rate penonton dari awal sampai akhir, konten kuali gede otomatis punya hook, podcast lebih susah harus pintar memilih momen cutting dan menyambung (jahit) bagian yang menarik",
+      "durasi_detik": 119.6,
+      "part_sumber": "2289.16 - 2408.30"
+    },
+    {
+      "file": "clip-08-saham-trading.mp4",
+      "topik": "Cara atur uang: prinsip besar pasak daripada tiang, boleh beli mahal asal jelas manfaatnya, belajar saham 3-4 bulan dari teman-teman, cuma pegang prinsip turun beli naik jual bisa tambahan 50-100 juta sebulan, teman yang expert sampai 500 juta-1 miliar",
+      "durasi_detik": 148.5,
+      "part_sumber": "2678.00 - 2826.50"
+    },
+    {
+      "file": "clip-09-pesan-mama.mp4",
+      "topik": "Masukan terbaik yang pernah didapat: pesan mama 'tidak kaya tidak masalah, yang penting rajin bekerja', jangan pernah mengunderestimate apalagi generasi muda yang gampang down, buang yang buruk ambil yang baik karena itu bagian dari proses",
+      "durasi_detik": 111.6,
+      "part_sumber": "2968.82 - 3080.00"
+    }
+  ]
+}
