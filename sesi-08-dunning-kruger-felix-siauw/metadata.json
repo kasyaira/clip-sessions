@@ -1,0 +1,68 @@
+{
+  "sesi": "sesi-08-dunning-kruger-felix-siauw",
+  "tanggal": "2026-09-25",
+  "sumber": {
+    "judul": "Dunning-Kruger Effect Harus Direvisi! - Felix Siauw",
+    "channel": "Felix Siauw",
+    "url": "youtu.be/AL-b8wznH0s",
+    "durasi_total": "12:52"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG DIUCAPKAN BERUBAH KUNING #FFDE1A + membesar (upgrade sesi-08), kata berikutnya putih meredup, outline lebih tebal (15px)",
+    "watermark": "@ofkiehme",
+    "upgrade_sesi_ini": "highlight per-kata mengikuti irama bicara (timing word-level whisper): kata aktif kuning & pop 1.08x dengan transisi 0.09s, kata yang sudah diucap tetap kuning (progressive karaoke)"
+  },
+  "clips": [
+    {
+      "file": "clip-01-npd-geri-pembukaan.mp4",
+      "topik": "Pembukaan teaser tiga perkara (ketentuan Allah / kepakaran / selera) + reaksi Felix: entah harus sedih atau ketawa, standar NPD yang tidak pernah merasa salah, menganggap dirinya perfect, joke Donald Trump",
+      "durasi_detik": 79.6,
+      "part_sumber": "0.0 - 78.98"
+    },
+    {
+      "file": "clip-02-semua-tentang-dia.mp4",
+      "topik": "Contoh NPD: kritik dibanting balik (lo yang problem, bodo amat), joke BGN = gizi, kenapa sedih: ternyata semuanya tentang dia bukan orang lain, contoh orang tua yang bilang demi kebaikan kamu padahal keinginan sendiri",
+      "durasi_detik": 89.6,
+      "part_sumber": "79.0 - 167.98"
+    },
+    {
+      "file": "clip-03-mbg-tender-politik.mp4",
+      "topik": "MBG sebagai program pencitraan: pengen dicatat sebagai pemberi makan anak Indonesia, gratis yang sebenarnya dari pajak rakyat, klarifikasi kepala BGN: 60 persen rakyat adalah robot, semua penolak = robot, ini tender politik, gue dipilih 58 persen",
+      "durasi_detik": 133.6,
+      "part_sumber": "168.0 - 300.98"
+    },
+    {
+      "file": "clip-04-logika-kacau-gizi.mp4",
+      "topik": "Logika kacau: program jalan terus tanpa evaluasi dan reset, kalau memang bukan duit lu ya gak usah evaluasi, duit itu rugi karena bisa dipakai yang lain, pakar memang tak pernah dihargai di Indonesia sampai orang pinter keluar negeri, pakar yang masuk pemerintah malah makin aneh (100 ribu = 1 dolar), joke gizi BGN",
+      "durasi_detik": 119.6,
+      "part_sumber": "301.0 - 419.99"
+    },
+    {
+      "file": "clip-05-islam-tiga-perkara.mp4",
+      "topik": "Kerangka Islam: tiga perkara — ketentuan Allah (halal/haram, tidak bisa divoting), perkara kepakaran (benar/salah, tidak boleh selera atau asal buka Al-Quran), perkara selera (bebas); nilai satu pakar lebih berarti daripada seribu ulama atau sejuta orang",
+      "durasi_detik": 78.8,
+      "part_sumber": "420.0 - 498.1"
+    },
+    {
+      "file": "clip-06-pakar-ditolak-ide-ancol.mp4",
+      "topik": "Kenapa pakar ditolak: karena tidak sependapat dengan bapak (kalau sependapat pasti disebut top markotop dan jujur), perintah fas alu ahladzikri (tanya orang yang berilmu), ciri NPD: hanya mau dengar yang sesuai pendapat, sementara yang di sekitar ngasih ide ancol-ancol (mandamin, kartu pula pake tepung, sawit tanaman ajaib), sampai bingung di forum klarifikasi",
+      "durasi_detik": 154.5,
+      "part_sumber": "498.15 - 652.02"
+    },
+    {
+      "file": "clip-07-pisa-turun-tak-signifikan.mp4",
+      "topik": "Bukti kepakaran ditolak: skor PISA Indonesia justru turun, klaim naik tidak signifikan saat diuji T (bisa kebetulan, tidak valid statistik), seharusnya pendapat berbeda didengarkan; kalau tetap mau MBG minimal libatkan pakar — dana lebih baik untuk pendidikan dan infrastruktur",
+      "durasi_detik": 60.7,
+      "part_sumber": "652.1 - 712.18"
+    },
+    {
+      "file": "clip-08-dunning-kruger-revisi.mp4",
+      "topik": "Penutup: Indonesia bergerak sesuai keinginan bapak, kita tidak perlu pakar karena terlalu pinter di Indonesia bisa berbahaya; punchline: pendidikan Dunning-Kruger harus direvisi — semakin pinter orang semakin merasa bodoh, dan semakin bodoh pun semakin merasa bodoh, dalam kondisi apa orang bisa menilai orang tanpa pinter tanpa bodoh",
+      "durasi_detik": 60.2,
+      "part_sumber": "712.2 - 772.1"
+    }
+  ]
+}
