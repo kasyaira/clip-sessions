@@ -286,3 +286,50 @@ node scripts/loader-download.mjs "https://youtu.be/<id>" /path/out.mp4 720
  9. metadata.json per sesi (format sesi-08) → upload
 10. Upload zip kit revisi + CARA-KERJA.md terbaru ke repo
 ```
+
+---
+
+# ADDENDUM SESI-10 (video 13:02 "Menolak Pakar Termasuk NPD Nggak Sih?" — Felix Siauw)
+
+> Video pendek: alur §13 jalan tanpa modifikasi (cuma 2 bagian transkrip).
+> TAPI sesi ini menemukan insiden penting soal TOKEN yang wajib diketahui
+> semua sesi berikutnya — lihat §14.
+
+## 14. INSIDEN TOKEN: hardcode di zip kit = AUTO-REVOKE oleh GitHub
+
+**Apa yang terjadi:** token PAT yang di-hardcode di `gh-upload.mjs` +
+`gh-push-big.sh` (per permintaan "simpan hardcode gapapa") IKUT TER-PUBLISH
+ke repo PUBLIK `kasyaira/clip-sessions` lewat `ofc-clip-kit.zip`. GitHub
+punya **secret scanning** yang otomatis mendeteksi fine-grained PAT yang
+bocor di repo publik dan **langsung me-revoke-nya**. Akibatnya di sesi-10:
+- REST API `api.github.com` → 401 "Bad credentials"
+- `git push` → "Invalid username or token" (padahal fetch/ls-remote SUKSES
+  — MENIPU, karena repo-nya publik: fetch jalan anonim tanpa auth sama
+  sekali! Jangan pakai ls-remote/fetch sebagai bukti token valid.)
+
+**Aturan mulai sesi-10 (SUDAH DITERAPKAN DI KIT):**
+1. TOKEN TIDAK PERNAH LAGI DITULIS DI FILE KIT. `gh-upload.mjs` dan
+   `gh-push-big.sh` sekarang membaca token dari file eksternal DI LUAR
+   kit: `/home/z/my-project/work/.ghtoken` (satu baris, isi PAT saja).
+2. Sebelum zip kit di-upload ke repo, SELALU scan dulu:
+   `rg -l "github_pat_" scripts/ src/ *.md *.json` → harus kosong.
+3. Kalau token baru diberikan user lewat chat: tulis ke `.ghtoken`,
+   jangan pernah echo nilai token ke file yang akan di-upload.
+4. Cara verifikasi token sebelum pakai: `git push --dry-run` (bukan
+   ls-remote — lihat poin menipu di atas).
+
+## 15. Catatan alur sesi-10 (video pendek 13 menit)
+
+- Video 782s CFR 23.976fps → langsung `raw.mp4` tanpa re-encode (§3).
+- Kalibrasi whisper: 0.96x realtime → part-len 460 → cuma 2 bagian
+  (init otomatis hitung), merge 1713 kata 0 gap.
+- 5 klip membagi HABIS seluruh video (0-782s, tanpa gap antar klip),
+  batas potong di batas kalimat persis via words-around (§13 langkah 6):
+  0-220.6 / 220.6-422.6 / 422.6-561.4 / 561.8-661.4 / 661.9-782.0
+- Urutan render prioritas topik terkuat dulu (clip-02 ceklist NPD →
+  clip-01 mitos → clip-03 → clip-04 → clip-05) — sesuai §11.
+- QA piksel cepat (pengganti VLM kalau tidak sempat): ekstrak frame,
+  cek 1080x1920 + ada piksel kuning #FFD60A di area subtitle dengan PIL
+  — terbukti cukup untuk memastikan word-highlight jalan.
+- gh-push-big.sh sekarang otomatis hapus work dir gh-push setelah tiap
+  push (§11) — tidak perlu manual lagi.
