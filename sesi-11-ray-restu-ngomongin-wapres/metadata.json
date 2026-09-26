@@ -1,0 +1,86 @@
+{
+  "sesi": "sesi-11-ray-restu-ngomongin-wapres",
+  "tanggal": "2026-09-26",
+  "sumber": {
+    "judul": "Kenapa orang-orang pada ngomongin Mas Wapres?",
+    "channel": "Ray Restu Fauzi",
+    "url": "youtu.be/Z4DgIN7JkEY",
+    "durasi_total": "31:44"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "catatan": "Sumber 1280x720 60fps CFR asli (grid 1/60 nol gap di full scan) dipakai tanpa re-encode. 11 klip membagi habis seluruh video 0-1904.5s tanpa gap, batas potong di batas kalimat persis via words-around. Transkrip 5 bagian (part-len 460, overlap 6) merge 4147 kata monotonik 0 gap. Sesi agent ini = 'sesi-12' di CARA-KERJA (sesi-11 agent sebelumnya hanya menyelesaikan upload sesi-10)."
+  },
+  "clips": [
+    {
+      "file": "clip-01-konteks-gugatan-mk.mp4",
+      "topik": "Hook pembuka: apakah Mas Gibran akan benar-benar dimakzulkan? Jawabannya belum tahu karena putusan persidangan Mahkamah Konstitusi dijadwalkan 28 September 2026; konteks kenapa tiba-tiba ramai dibahas, sidang MK minta keterangan beberapa lembaga termasuk usul KPU, plus profil penggugat Pak Denny Indrayana (mantan staf khusus era SBY dan wamenkumham) - bukan kategori kaleng-kaleng, dan teaser tanggapan Mahfud MD yang katanya pihak paling dirugikan",
+      "durasi_detik": 185.0,
+      "part_sumber": "0.00 - 184.58"
+    },
+    {
+      "file": "clip-02-jalur-pendidikan-gibran.mp4",
+      "topik": "TLDR jalur pendidikan Gibran: SMP-SMAnya di Singapura Orchid Park Secondary School cuma sampai O-level (setara kelas 10, belum lulus SMA), lanjut UTS Insearch Sydney yang ternyata bimbel/matrikulasi bukan SMA dan cuma ditempuh 6 bulan dari seharusnya 1 tahun, lalu lulus S1 di kampus Singapura; masalahnya syarat nyalon pejabat di Indonesia wajib ijazah SMA sederajat walau sudah S1-S2-S3, dan waktu nyalon wakil walikota sertifikat bimbelnya disetarakan dengan ijazah SMK Peminatan Akuntansi dan Keuangan oleh dinas pendidikan - dasar argumen Denny Indrayana bahwa bimbel tidak setara SMA jadi pencalonannya tidak memenuhi syarat pendidikan minimum",
+      "durasi_detik": 221.8,
+      "part_sumber": "184.58 - 405.92"
+    },
+    {
+      "file": "clip-03-aturan-pengecualian-pkpu.mp4",
+      "topik": "Aturan ajaib yang membuat posisi Gibran kuat: Pasal 18 ayat 3 PKPU 19/2023 - KPU mengecualikan kewajiban melampirkan ijazah SMA fisik jika calon lulusan sekolah menengah luar negeri yang dokumennya tidak lengkap tapi punya ijazah perguruan tinggi S1 yang sah; aturan ini dianggap pas banget dengan kondisi Gibran sehingga karir politiknya mulus, sementara masyarakat biasa yang sekolah dalam negeri tetap wajib fotokopi ijazah SMA dilegalisir - masyarakat biasa malah lebih sulit",
+      "durasi_detik": 90.8,
+      "part_sumber": "405.92 - 496.28"
+    },
+    {
+      "file": "clip-04-kpu-tak-pernah-verifikasi.mp4",
+      "topik": "Momen sidang MK yang berpotensi mengubah segalanya: hakim Saldi Isra bertanya apakah KPU datang ke Dinas Pendidikan untuk verifikasi persyaratan pendidikan calon - jawaban KPU di depan persidangan: TIDAK DATANG, cukup percaya surat keterangan dinas karena dianggap keluar dari instansi yang berwenang; padahal di era pemilihan kepala daerah KPU datang kemana-mana untuk verifikasi bahkan ngotot cek paket C ke sekolahnya - komentar presenter: they have one job, cuma 3 pasangan atau 6 orang yang harus diverifikasi tapi tidak dicek",
+      "durasi_detik": 264.1,
+      "part_sumber": "496.28 - 759.88"
+    },
+    {
+      "file": "clip-05-bawaslu-dilarang-kamera.mp4",
+      "topik": "Giliran Bawaslu ditanya: juga tidak pernah datang karena tidak ada informasi sama sekali; saat pengawasan proses mereka hanya diberi akses masuk ruangan tapi DILARANG membawa handphone dan kamera, protes soal batas waktu 15 menit setelah mulai dan 15 menit sebelum berakhir, sampai-sampai Bawaslu pernah mengajukan pengaduan kode etik ke KPU tahun 2023 tapi momentumnya tinggal sehari-dua hari - sementara masyarakat yang harus menanggung akibatnya 5 tahun; komentar: ini cuma masa ketelitian doang dan ada dua lembaga sekaligus yang bolong",
+      "durasi_detik": 214.3,
+      "part_sumber": "759.88 - 973.76"
+    },
+    {
+      "file": "clip-06-petitum-mpr-60-hari.mp4",
+      "topik": "Gara-gara keterangan sidang orang-orang langsung pusing karena posisi Gibran ternyata tidak seterang itu; lalu bedah artikel Tirto soal skenario jika gugatan dikabulkan: jadwal putusan 28 September - 6 Oktober 2026 (pemeriksaan, pembuktian, permusyawaratan hakim), perkara terdaftar 01/PHPU.PRES/XXV/2026 diajukan Denny Indrayana dkk lewat mekanisme PHPU Presiden-Wapres 2024 meski lewat tenggat; petitum lengkap: nyatakan syarat pendidikan wajib terpenuhi saat pendaftaran, diskualifikasi Gibran, batalkan penetapan KPU dan pelantikannya, sampai MPR harus memilih wapres baru dari 2 calon usulan presiden paling lambat 60 hari",
+      "durasi_detik": 214.2,
+      "part_sumber": "973.76 - 1187.47"
+    },
+    {
+      "file": "clip-07-sengketa-hasil-bukan-proses.mp4",
+      "topik": "Kenapa kemungkinan kecil benar-benar dimakzulkan: analis Kaka Suminta (LAPD) menjelaskan PHPU adalah mekanisme sengketa HASIL pemilu, bukan sengketa proses pencalonan - sengketa proses punya jalur sendiri lewat Bawaslu dengan batas waktu yang sudah lewat; pemilu adalah rangkaian tahapan yang harus punya finalisasi, dan belum ada preseden pembatalan wakil presiden yang SUDAH dilantik karena cacat syarat pencalonan ditemukan setelah pemilu selesai - apalagi setingkat presiden dan wapres adalah puncak hirarki kekuasaan",
+      "durasi_detik": 155.4,
+      "part_sumber": "1187.47 - 1342.41"
+    },
+    {
+      "file": "clip-08-preseden-berbahaya-merembet.mp4",
+      "topik": "Bahaya preseden jika PHPU pasca-final bisa membuka ulang persoalan pencalonan: pilkada, pemilu DPR, DPRD bisa ikut-ikutan digugat oleh banyak calon anggota legislatif yang kalah; MK juga harus menjelaskan mata rantai akibat hukumnya - cukup nyatakan pencalonan cacat, batalkan penetapan KPU, atau menciptakan kekosongan jabatan yang diisi lewat Pasal 8 ayat 2 UUD 1945; dua hal harus dijaga sekaligus: kepastian hasil pemilu yang sudah final dan tersedianya mekanisme hukum ketika ada pelanggaran",
+      "durasi_detik": 133.0,
+      "part_sumber": "1342.41 - 1474.99"
+    },
+    {
+      "file": "clip-09-mahfud-putusan-mk-tetap-sah.mp4",
+      "topik": "Tanggapan Mahfud MD (ca wapres 2024 yang kalah): secara konstitusional Prabowo-Gibran sudah sah dan selesai karena diputus pengadilan - meski pengadilannya curang sampai hakimnya dipecat, putusan MK tetap bersifat final dan tidak boleh dibatalkan lagi meskipun hakimnya salah ('gila ya, kalau hakimnya salah kok keputusannya masih dibenarkan - kalau ditunda dulu, agenda kalender konstitusi akan terlihat melantikkan'); 18 kasus daerah dalam buku itu, 12 diantarai tipikor, tapi semua putusan tetap berlaku - secara konstitusional selesai meski secara moral tidak bisa diterima",
+      "durasi_detik": 211.2,
+      "part_sumber": "1474.99 - 1685.68"
+    },
+    {
+      "file": "clip-10-mahfud-mk-tidak-berwenang.mp4",
+      "topik": "Mahfud soal kasus Denny: menurut teori MK tidak berwenang memeriksa - kewenangan MK cuma 4 dan tidak ada mendiskualifikasi ijazah orang yang sudah terpilih; kalau lewat PHPU waktunya sudah lewat dan Gibran sudah 2 tahun menjabat, sementara keabsahan ijazah itu kewenangan PTUN; Mahfud menolak ikut mendorong gugatan agar tidak dinilai 'pantas, orang kalah ikut' - biar kelihatan objektivitas gugatannya, cukup menunggu apa yang dikatakan MK",
+      "durasi_detik": 100.5,
+      "part_sumber": "1685.68 - 1785.68"
+    },
+    {
+      "file": "clip-11-yang-penting-arah-kebijakan.mp4",
+      "topik": "Penutup: semua baru sebatas teori dan prematur, mending nunggu hasil putusannya saja; plus guyonan khas Twitter - kalau Gibran bisa dipermasalahkan lewat ijazah berarti Prabowo bisa lewat SKCK 'Kementerian kegelapan!'; pesan penutup presenter: dia menghindari rana politik figural dan lebih senang membahas kebijakan yang praktis benar-benar dirasakan rakyat, karena yang paling penting bukan tokohnya tapi arah kebijakannya",
+      "durasi_detik": 119.3,
+      "part_sumber": "1785.68 - 1904.50"
+    }
+  ]
+}
