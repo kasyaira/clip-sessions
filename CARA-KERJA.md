@@ -392,3 +392,57 @@ Sebelum upload klip hasil sesi lama, cek cepat (semua lolos di sesi-11):
 - Upload klip satu-satu tetap urut topik terkuat dulu (§11).
 - README.md repo perlu dirapikan tabel sesinya (belum di-update sejak sesi-05;
   sesi-11 sudah lengkapi s/d sesi-10 — jaga tetap ter-update tiap sesi).
+
+---
+
+# ADDENDUM SESI-12 (video sesi-11: "Kenapa orang-orang pada ngomongin Mas Wapres?" — Ray Restu Fauzi)
+
+> Catatan penomoran: addendum ini labelnya SESI-12 karena addendum sesi
+> agent sebelumnya sudah memakai nama "SESI-11" (sesi agent yang hanya
+> menyelesaikan upload sesi-10). Untuk FOLDER VIDEO di repo, video ini
+> tetap terdaftar sebagai sesi-11 (penomoran mengikuti video, bukan
+> sesi agent). Video 31:44, 1280x720, 60fps CFR ASLI (full-scan nol gap),
+> dipakai langsung tanpa re-encode → 11 klip full-coverage 0-1904.5s.
+
+## 20. Catatan operasional sesi ini (semua terverifikasi jalan)
+
+1. **Sandbox reset LAGI** — pola pemulihan §16-17 terbukti: `upload/`
+   selamat, rsync dari `upload/ofc-clip-kit/` (exclude out/, cache, .git,
+   CARA-KERJA.md supaya versi repo tidak tertimpa versi lama), lalu
+   `work/.ghtoken` ditulis ulang, bootstrap skip semua.
+2. **JANGAN paralel rsync + loader-download** di dua tool call bersamaan —
+   bandwidth berbagi, keduanya timeout. Jalankan berurutan.
+3. **loader-download bisa "timeout" padahal SUDAH selesai** — tool call
+   ke-timeout tepat setelah file ter-rename dari .part. SELALU cek
+   `work/raw-new.mp4` ada + ffprobe valid SEBELUM retry download.
+4. Sumber 60fps (pertama kali di-project ini) diproses normal — kit render
+   30fps, video card 60fps tidak masalah, A/V sinkron (audio di-mux dari
+   sumber, bukan hasil render).
+5. Kalibrasi whisper 0.99x realtime → part-len 460 → 5 bagian → merge
+   4147 kata, mono, 0 back-jump.
+6. QA piksel: frame gagal kuning=0 di clip-05 @80.5s ternyata micro-pause
+   antar chunk (kata "datang" selesai 840.40, "mulai" mulai 840.43) —
+   frame tetangga (±1-2s) semua OK. Sebelum diagnosa gagal, SELALU cek
+   3-4 frame tetangga + cek transkrip apakah sedang jeda hening.
+7. Upload: 21-22MB → Contents API OK; 28-55MB → langsung gh-push-big.sh
+   (semua sukses sekali jalan, cepat — jangan buang waktu coba Contents
+   API untuk file >28MB).
+8. 11 klip × render ≈ 2-3 panggilan render-retry per klip (masing-masing
+   kena timeout 10 menit lalu lanjut) — total ~4 jam untuk video 31 menit.
+   Pola: `rm -rf out/segments && render-retry.sh <id> 3` ulang sampai
+   EXIT=0, lalu finalize + qa_clip.py + upload SEBELUH klip berikutnya.
+9. README repo + metadata.json + CARA-KERJA.md + zip kit di-update tiap
+   akhir sesi (tabel sesi di README jangan sampai tertinggal lagi).
+
+## 21. Cache-pack LENGKAP (dengan model) tersimpan permanen di upload/
+
+Bootstrap sesi ini membuat cache-pack baru 526MB yang SUDAH TERMASUK
+model whisper small (yang lama 54MB tidak). Salinan sudah ditaruh di
+mount persisten: `upload/clip-kit-cache.tar.gz`.
+
+Sesi baru (setelah reset) punya 2 jalur pemulihan — pilih salah satu:
+- **Jalur A (paling cepat)**: rsync dari `upload/ofc-clip-kit/` (§17) —
+  dapat whisper+model+node_modules+chrome sekaligus (~5 menit).
+- **Jalur B**: extract `upload/clip-kit-cache.tar.gz` ke root kit
+  (`tar xzf` di dalam folder kit) untuk whisper+model+chrome, lalu
+  `npm ci` untuk node_modules (~2-3 menit).
