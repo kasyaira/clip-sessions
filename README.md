@@ -25,6 +25,7 @@ Di dalam tiap folder sesi:
 | [sesi-09-bobon-bantu-orang-politik](./sesi-09-bobon-bantu-orang-politik) | Bobon Mau Bantu Lebih Banyak Orang Lewat Politik — youtu.be/rnqvXYrVw4w | 9 clip (utuh 51:29) |
 | [sesi-10-menolak-pakar-npd](./sesi-10-menolak-pakar-npd) | Menolak Pakar Termasuk NPD Nggak Sih? — Felix Siauw — youtu.be/3SkVPuJnGBI | 5 clip (utuh 13:02) |
 | [sesi-11-ray-restu-ngomongin-wapres](./sesi-11-ray-restu-ngomongin-wapres) | Kenapa orang-orang pada ngomongin Mas Wapres? — Ray Restu Fauzi — youtu.be/Z4DgIN7JkEY | 11 clip (utuh 31:44) |
+| [sesi-12-guru-gembul-4-cara-lepas-kemiskinan](./sesi-12-guru-gembul-4-cara-lepas-kemiskinan) | Eps 1072 | 4 CARA LEPAS DARI KEMISKINAN DI INDONESIA — guru gembul — youtu.be/QGU_hSPv9Vw | 12 clip (utuh 29:57) |
 
 ## Spesifikasi Output
 
