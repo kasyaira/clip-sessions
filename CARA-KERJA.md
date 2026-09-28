@@ -446,3 +446,57 @@ Sesi baru (setelah reset) punya 2 jalur pemulihan — pilih salah satu:
 - **Jalur B**: extract `upload/clip-kit-cache.tar.gz` ke root kit
   (`tar xzf` di dalam folder kit) untuk whisper+model+chrome, lalu
   `npm ci` untuk node_modules (~2-3 menit).
+
+---
+
+# ADDENDUM SESI-13 (video sesi-12: "Eps 1072 | 4 CARA LEPAS DARI KEMISKINAN DI INDONESIA" — guru gembul)
+
+> Sesi agent ini menjalankan alur §13 end-to-end LAGI setelah sandbox reset.
+> Semua di bawah terverifikasi jalan di sesi ini. 12 klip full-coverage
+> 0-1796.7s (29:57) selesai render + QA + upload dalam satu sesi.
+
+## 22. Pemulihan sesi ini: model hilang dari upload/ofc-clip-kit/
+
+- Sandbox reset LAGI — pola §16-17 tetap berlaku: `upload/` selamat.
+- BARU: `upload/ofc-clip-kit/whisper.cpp/` TIDAK lagi berisi
+  `ggml-small.bin` (487MB) — entah dibersihkan antar sesi. Solusi cepat
+  terbukti: extract SATU FILE dari cache-pack root, cuma 7 detik:
+  ```
+  tar xzf upload/clip-kit-cache.tar.gz -C ofc-clip-kit/ whisper.cpp/ggml-small.bin
+  ```
+- Temuan kecepatan mount: rsync per-file LAMBAT (~1.1MB/s, 1.25GB = 3
+  tool call × 10 menit), tapi BACA SEKUENSIAL FILE BESAR SANGAT CEPAT
+  (dd test 3.3 GB/s). Jadi: kode via rsync, barang berat via tarball
+  cache-pack — jangan rsync model/binary besar kalau bisa dari tarball.
+- Verifikasi rsync: bandingkan `find . -type f -printf "%s %p\n" | sort`
+  + jumlah byte source vs target (du bisa menyesatkan di ossfs).
+
+## 23. Catatan operasional sesi ini
+
+1. Kalibrasi whisper 1.02x realtime → part-len 460 → 4 bagian → merge
+   4.095 kata mono 0 back-jump (video 29:57).
+2. **Jingle intro di tengah video di-SKIP** (preseden baru): klip-02
+   berakhir di "Yuk kita bahas." (289.91), klip-03 mulai SETELAH jingle
+   musik 290.26-301.98 → start 302.00. Full-coverage tetap berlaku
+   kecuali segmen non-bicara yang jelas-jelas jingle/musik.
+3. Script QA baru masuk kit: `scripts/qa_clip.py` — QA piksel batch
+   (ambil N frame + hitung piksel kuning #FFD60A area subtitle +
+   auto-saran cek tetangga). 2 kasus LOW @ frame sampling keduanya
+   micro-pause antar kata (§20.6 terkonfirmasi lagi) — cek tetangga
+   + transkrip words-around sebelum diagnosa gagal.
+4. Pola upload sesi ini: 21.6MB & 27.5MB → Contents API OK; sisanya
+   (27-58MB) langsung `gh-push-big.sh` — semua sekali jalan cepat.
+5. Urutan render topik terkuat dulu (§11): nyogok-PNS → pesta-nikah →
+   rumus-4 → moge-vs-gerobak → 4-ciri → S1-baso → kafe → tanda-miskin
+   → mobil-macet → naik-ojek → bahan-bakar → bandingkan-diri.
+6. Zip kit di-refresh + di-upload di akhir sesi (55 file kode + docs +
+   render-inputs; TETAP tanpa node_modules/whisper/out/raw.mp4/cache).
+
+## 24. Checklist penutupan sesi (jangan ada yang tertinggal)
+
+1. Semua klip ter-upload (12/12) ✓
+2. `metadata.json` per sesi (format sesi-08/11, topik dirangkum detail) ✓
+3. `README.md` repo: tambah baris tabel sesi ✓
+4. `CARA-KERJA.md`: addendum sesi ✓ (file ini)
+5. `ofc-clip-kit.zip` refresh + upload ✓
+6. Scan token sebelum zip: `rg -l "github_pat_" scripts/ src/ *.md *.json` harus kosong ✓
