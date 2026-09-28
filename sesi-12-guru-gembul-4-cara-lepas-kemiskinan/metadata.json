@@ -1,0 +1,92 @@
+{
+  "sesi": "sesi-12-guru-gembul-4-cara-lepas-kemiskinan",
+  "tanggal": "2026-09-28",
+  "sumber": {
+    "judul": "Eps 1072 | 4 CARA LEPAS DARI KEMISKINAN DI INDONESIA",
+    "channel": "guru gembul",
+    "url": "youtu.be/QGU_hSPv9Vw",
+    "durasi_total": "29:57"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "catatan": "Sumber 1280x720 30fps CFR asli (grid 1/30 nol gap di full scan 53.899 paket) dipakai tanpa re-encode. 12 klip full-coverage 0-1796.7s, hanya jingle intro 289.91-302.00 dilewati, batas potong di batas kalimat persis via words-around. Transkrip 4 bagian (part-len 460, kalibrasi 1.02x realtime, overlap 6) merge 4.095 kata monotonik 0 gap."
+  },
+  "clips": [
+    {
+      "file": "clip-01-tanda-termasuk-miskin.mp4",
+      "topik": "Hook pembuka relatable: apakah baraya miskin? Jangan malu mengakuinya - deretan pertanyaan diagnosis ala guru gembul: pengen memberi keluarga sesuatu tapi tak pernah mampu, utang dan cicilan makan pendapatan, kena terror pertanyaan 'kapan sukses' tapi tak bisa jawab, pengen menikah tapi nunggu sukses yang tak kunjung datang, usia bertambah kesempatan menyempit tapi kesejahteraan tak kunjung naik - kalau ada di posisi itu berarti miskin, sesimpel itu",
+      "durasi_detik": 104.5,
+      "part_sumber": "0.00 - 104.00"
+    },
+    {
+      "file": "clip-02-rumus-4-penyebab-kemiskinan.mp4",
+      "topik": "Penyakit utama fakir miskin: tak mau mengakui kemiskinannya dan menyalahkan pihak lain - candu teori konspirasi Illuminati, Rothschild, Rockefeller, Elon Musk, Bill Gates, sampai presiden - memang menenangkan tapi bikin tak bisa memperbaiki diri; lalu rumus kemiskinan cuma 4: GENGSIAN, malas, bodoh, pengecut - punya satu saja berpotensi miskin, dua sekaligus hampir pasti miskin; episode ini fokus bahas gengsian: sejauh mana gengsi menghancurkan potensi kesejahteraan",
+      "durasi_detik": 186.4,
+      "part_sumber": "104.00 - 289.91"
+    },
+    {
+      "file": "clip-03-4-ciri-orang-gengsian.mp4",
+      "topik": "Diagnosis 4 ciri orang gengsian dari contoh sehari-hari: (1) tidak pernah mengaku salah walau jelas salah, (2) hidupnya diatur 'kata orang' - nilai sosial nisbi yang batasnya pun tak dia ketahui, (3) beli barang berdasarkan citra bukan fungsi atau kebutuhan - beli mobil karena tetangga punya, (4) gampang FOMO ikut-ikutan tren makanan dan es krim - capek tapi jadi kewajiban karena harga dirinya terletak pada kata orang",
+      "durasi_detik": 177.3,
+      "part_sumber": "302.00 - 478.84"
+    },
+    {
+      "file": "clip-04-s1-malu-kerja-baso.mp4",
+      "topik": "Fenomena aneh Indonesia: lulusan S1 justru paling banyak nganggur dibanding jenjang pendidikan lain - gara-gara gengsi 'saya kan lulusan S1 mana mungkin jadi cleaning service atau satpam', orang tuanya ikut marah 'jangan jadi karyawan baso, kamu dikuliahin panjang-panjang'; padahal nilai kerja itu soal kualitas, kompetensi, dan capaian - di negara mapan anak bangga bilang 'papa saya tukang sampah', cuma kita yang malu karena melihat simbol, bukan kualitas",
+      "durasi_detik": 123.3,
+      "part_sumber": "478.84 - 601.69"
+    },
+    {
+      "file": "clip-05-nyogok-400-juta-jadi-pns.mp4",
+      "topik": "Kisah nyata kakak beradik: orang tua sampai jual tanah dan rumah demi menyogok 400 juta agar si kakak jadi PNS - diterima, gaji cuma 2-4 juta; si adik tak kebagian apa-apa malah orang tua nekat nebeng di rumahnya, padahal dagang ciloknya maju pesat dengan omzet 10-20 juta sebulan bersih; orang tua tetap membanggakan si kakak yang 'pakai seragam, kerjanya tetap, dapat pensiun, keliatan bagus sama besan' - gaji adik 2-3 kali lipat tetap tak dianggap karena kurang gengsi",
+      "durasi_detik": 162.2,
+      "part_sumber": "601.97 - 763.68"
+    },
+    {
+      "file": "clip-06-pesta-nikah-160-juta.mp4",
+      "topik": "Matematika gila gengsi pernikahan: rata-rata gaji pekerja Indonesia 3,1 juta per bulan, tapi rata-rata pesta pernikahan di Indonesia menyentuh 160 juta - cuma untuk acara 1-3 hari; banyak orang tua rela jual tanah, rumah, aset, harga diri, sampai 'jual ginjal' demi resepsi megah karena tetangga sebelumnya juga semegah itu - gengsi yang dinaik-turunkan tetap saja gengsi, dan itu bikin miskin",
+      "durasi_detik": 80.3,
+      "part_sumber": "763.84 - 843.64"
+    },
+    {
+      "file": "clip-07-gengsi-nongkrong-kafe.mp4",
+      "topik": "Fenomena kafe menjamur dari 2 sisi: banyak koruptor bikin kafe untuk cuci uang (deretan kafe di Solo katanya milik koruptor semua), sementara anak muda nongkrong kafe bukan untuk menikmati menunya tapi demi validasi - foto selfie instagramable, biar keliatan keren dan gaul; hitungannya: nongkrong sekali habis 80-150 ribu saat gaji rata-rata 3 juta - bandingkan Australia yang gaji 50-60 juta cuma habis 200 ribu untuk nongkrong: itu gengsi yang bikin miskin sendiri",
+      "durasi_detik": 176.9,
+      "part_sumber": "843.78 - 1020.17"
+    },
+    {
+      "file": "clip-08-mobil-gengsi-bikin-macet.mp4",
+      "topik": "Gengsi massal Indonesia = mobil: orang Indonesia bikin mobil tidak bisa, nyetir pun banyak yang melanggar, tapi berusaha mati-matian punya mobil demi status sosial - ga punya garasi pun beli mobil duluan, ga bisa nyetir pun punya duluan, ga butuh pun punya duluan; dampaknya: orang yang cuma butuh ruang jalan 70cm x 30cm memakan jalan 2x5 meter karena gengsi tidak mau angkutan umum - cek di kota besar: mobil besar yang bikin macet, intip isinya cuma satu orang doang",
+      "durasi_detik": 96.3,
+      "part_sumber": "1020.20 - 1116.04"
+    },
+    {
+      "file": "clip-09-guru-gembul-naik-ojek.mp4",
+      "topik": "Contoh langsung dari orangnya: rumah guru gembul kecil dikelilingi semak belukar, pergi ke mana-mana tanpa tim dan tanpa kendaraan - kereta, ojek, motor, jarang sewa mobil; tiap datang ke podcast selalu disambut pertanyaan 'mana timnya? masa guru gembul kayak gitu?' - padahal jalan kaki dan ojek itu enak, bebas, bisa jajan seenaknya; masyarakat memaksa citra 'penghasilan besar harus tampil megah kelap-kelip' - padahal gengsi itu soal citra, bukan prestasi, capaian, dan kompetensi; akhirnya ribet sendiri dan miskin",
+      "durasi_detik": 175.7,
+      "part_sumber": "1116.04 - 1291.24"
+    },
+    {
+      "file": "clip-10-moge-vs-30-gerobak.mp4",
+      "topik": "Saran pertama: gengsi jangan dihilangkan, cukup DIPINDAHKAN ke hal konkret dan terukur - simulasi 200 juta rupiah: dipakai beli satu motor moge yang suaranya bikin terpukau tapi cicilannya 10 juta sebulan, atau beli 30 motor bekas plus gerobak cilok-cakue-baso, rekrut 30 karyawan, dapat 20 juta sebulan; mana yang lebih bergengsi? Sanjungan orang itu abstrak - tak bisa diukur tulus atau tidak - sementara penghasilan dari 30 gerobak itu nyata dan bisa diukur",
+      "durasi_detik": 182.8,
+      "part_sumber": "1291.29 - 1473.60"
+    },
+    {
+      "file": "clip-11-malu-miskin-jadi-bahan-bakar.mp4",
+      "topik": "Saran kedua: rasa malu atas kemiskinan jangan dihilangkan, justru diperkuat dan dijadikan bahan bakar - rasakan sakitnya saat lebaran anak minta hadiah tapi tak bisa memberi, pertahankan rasa sakit itu lalu kerja keras: tidak ada hari libur, tidak ada tanggal merah, upgrade skill, pengetahuan, dan kehebatan sampai terbebas dari kemiskinan; jangan seperti orang yang menutupi kemiskinan dengan pamer dan utang demi tetangga - hadapi rasa prih itu, jangan tutupi dengan hal palsu dan ispi",
+      "durasi_detik": 149.4,
+      "part_sumber": "1473.76 - 1622.74"
+    },
+    {
+      "file": "clip-12-bandingkan-diri-sendiri.mp4",
+      "topik": "Saran ketiga: gengsi jadi toxic karena selalu membandingkan diri dengan orang lain - 'teman saya umur 24 sudah punya segini, kenapa saya belum?' padahal isi kepala, latar ekonomi, pendidikan, pengalaman, rekam jejak semuanya beda jadi tidak adil dibandingkan; kalau mau bersaing, balaplah dengan diri sendiri di putaran sebelumnya: apa tahun ini lebih baik dari tahun lalu? Kalau menurun, jadikan alasan untuk kerja lebih keras dan berpikir lebih cerdas - jauh lebih sehat daripada melukai ego sendiri membandingkan dengan orang lain",
+      "durasi_detik": 174.4,
+      "part_sumber": "1622.74 - 1796.70"
+    }
+  ]
+}
