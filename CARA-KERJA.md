@@ -587,3 +587,26 @@ tetap bayar lazy-fetch sekali (~4-6 menit), push berikutnya di sesi yang
 sama hanya hitungan detik. Hapus work-dir manual di akhir sesi.
 (Lokasi agent: /home/z/my-project/scripts/gh-push-session.sh — tidak ikut
 zip kit, sesi berikutnya bikin ulang 1 menit.)
+
+## 29. Layout pemulihan di upload/ yang ditinggalkan sesi ini
+
+Sesi ini meninggalkan mount `upload/` dalam struktur BERBEDA dari §16-17
+(optimasi §22: barang berat via tarball, kode via rsync):
+
+- `upload/clip-kit-cache.tar.gz` (600MB) — whisper.cpp TER-BUILD + model
+  small + node_modules + chrome headless (SAMA dengan cache-pack root kit).
+- `upload/ofc-clip-kit/` — kode lengkap (src, scripts, public, render-inputs,
+  config) + `out/clips` (6 klip final) + `out/transcripts` + `out/data` +
+  `public/input/raw.mp4`. TANPA whisper.cpp/node_modules (sengaja dihapus —
+  ambil dari tarball, jangan rsync per-file: ossfs rsync ~0.8MB/s TAPI cp
+  sekuensial ~97MB/s — terukur sesi ini: 600MB = 6 detik).
+
+**Alur pemulihan sesi berikutnya ( tercepat ):**
+```
+1. rsync -a upload/ofc-clip-kit/ ofc-clip-kit/           # kode+out, ~30s
+2. tar xzf upload/clip-kit-cache.tar.gz -C ofc-clip-kit/ # whisper+model+nm+chrome, ~1-2 menit
+3. tulis token baru ke work/.ghtoken
+4. bash scripts/bootstrap.sh  # harus skip semua (verifikasi biner ada)
+```
+Jangan pakai Jalur A §17 apa adanya (rsync full) — itu menyalin
+node_modules/whisper per-file LAMBAT; pakai kombo rsync-kode + tarball di atas.
