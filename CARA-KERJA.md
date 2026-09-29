@@ -500,3 +500,90 @@ Sesi baru (setelah reset) punya 2 jalur pemulihan — pilih salah satu:
 4. `CARA-KERJA.md`: addendum sesi ✓ (file ini)
 5. `ofc-clip-kit.zip` refresh + upload ✓
 6. Scan token sebelum zip: `rg -l "github_pat_" scripts/ src/ *.md *.json` harus kosong ✓
+
+---
+
+# ADDENDUM SESI-14 (video sesi-13: "RESPECT GONTOR! Harusnya Ulama itu Kayak Gini!" — Felix Siauw)
+
+> Sesi agent menjalankan alur §13 end-to-end setelah sandbox reset, TAPI dengan
+> kondisi BARU: mount `upload/` KOSONG total (§16-17 tidak berlaku — tidak ada
+> warisan sesi sama sekali, mulai dari zip kit + token dari chat). 6 klip
+> full-coverage 0-918.65s (15:19) selesai render + QA + upload dalam satu sesi.
+
+## 25. PENTING: bootstrap.sh PUNYA BUG cmake → bisa bikin cache-pack RUSAK
+
+Kondisi awal sesi ini: zip kit fresh extract, `upload/` kosong. Run PERTAMA
+bootstrap.sh gagal diam-diam di langkah cmake:
+
+1. **Bug**: bootstrap menjalankan `pip install cmake` LANGSUNG — ditolak PEP 668
+   (`externally-managed-environment`), padahal fix yang terbukti (§10.2) adalah
+   venv + `python -m pip`. Script meng-ekspor PATH ~/.venv/bin tapi TIDAK bikin
+   venv-nya kalau belum ada.
+2. **Akibat berantai**: whisper.cpp ke-clone tapi gagal build (cmake absen) →
+   bootstrap tetap lanjut → **cache-pack 145M dibuat dari state RUSAK** (isi
+   whisper.cpp source tanpa binary/model). Run bootstrap berikutnya extract
+   cache rusak itu → gagal dengan "Whisper folder exists but the executable
+   (whisper.cpp/main) is missing. Delete whisper.cpp and try again."
+3. **Fix yang terbukti jalan**:
+   ```
+   python3 -m venv ~/.venv
+   ~/.venv/bin/python -m pip install cmake
+   cd ofc-clip-kit && rm -rf whisper.cpp clip-kit-cache.tar.gz
+   export PATH="$HOME/.venv/bin:$PATH"
+   bash scripts/bootstrap.sh     # selesai ~143s, cache-pack 573M BENAR
+   ```
+4. **Cegah berulang**: kalau bootstrap kedua kalinya extract cache lalu mati
+   di "executable is missing" → JANGAN diagnosis whisper-nya, itu cache-pack
+   rusak (dibuat dari run gagal). Hapus whisper.cpp + cache-pack + pastikan
+   cmake venv ada, ulang bootstrap. (Ide perbaikan bootstrap: jangan bungkus
+   cache-pack kalau whisper binary belum ada — belum di-patch, masih tugas
+   sesi berikutnya kalau mau.)
+
+## 26. ffprobe packet-pts itu DECODE ORDER (B-frame) — WAJIB sort dulu
+
+Cek CFR §3 dengan `packet=pts_time`: output ffprobe TIDAK urut waktu
+(reordering B-frame). Analisis gap tanpa sort menghasilkan anomali palsu
+(sesi ini: 14.916 "gap" palsu dari 22.023 paket). **Sort dulu pts-nya baru
+hitung grid** — hasil benar sesi ini: 100.00% interval tepat di grid
+1001/24000 (23.976fps CFR asli) → dipakai langsung tanpa re-encode.
+
+## 27. Catatan operasional sesi ini
+
+1. Video 918.65s (15:19) 720p CFR → 3 bagian transkrip (kalibrasi 0.90x,
+   part-len 460) merge 2.127 kata mono 0 back-jump.
+2. 6 klip full-coverage: 0-158.85 / 158.85-320.11 / 320.11-523.50 /
+   523.50-718.37 / 718.37-851.53 / 851.53-918.65 — semua batas di ujung
+   kalimat persis via words-around. Klip penutup 67.6s (pesan punch-line
+   "ulama tak bisa disetir") — boleh di bawah 111s asalkan topik tuntas.
+3. Urutan render prioritas topik terkuat: fatwa-jam-miliaran →
+   ulama-tak-bisa-disetir → juru-bicara-penguasa → agama-dasar →
+   pukulan-Konstantinopel → penggembala-dan-ayah.
+4. QA piksel: 3 frame LOW di 2 klip — SEMUA ternyata micro-pause antar kata
+   atau pop-in kata baru (kata mulai 0.07s sebelum frame sampling). Frame
+   tetangga ±1-2s semua OK → §20.6 terkonfirmasi LAGI: selalu cek tetangga
+   + transkrip sebelum diagnosa gagal.
+5. Upload: 12.2MB & 26.5MB → Contents API OK; 30-45MB → git plumbing.
+   lihat §28 untuk pola timeout baru.
+6. Whisper model `ggml-small.bin` sekali build langsung ikut cache-pack
+   573M (bootstrap normal) — simpan cache-pack ke `upload/` di akhir sesi
+   (§21) supaya sesi berikutnya jalur A/B pemulihan tersedia lagi.
+
+## 28. gh-push-big.sh: timeout tool call di tengah lazy-fetch — jangan panic
+
+Run pertama `gh-push-big.sh` (44MB) **ke-timeout tepat saat lazy-fetch blob
+repo** (tool call 5 menit). Dua artefak yang ditinggalkan:
+
+1. `work/gh-push/.git/index.lock` — run berikutnya tolak jalan
+   ("Another git process seems to be running").
+2. 1.7GB blob yang SUDAH ke-fetch tetap ada di work dir.
+
+**Fix terbukti**: `rm -f work/gh-push/.git/index.lock` → jalankan LAGI
+script yang sama → push sukses CEPAT (blob yang sudah lokal tidak di-fetch
+ulang). Jangan `rm -rf` work dir-nya — justru itu aset yang bikin retry cepat.
+
+**Optimisasi sesi ini** (simpan di luar kit): `gh-push-session.sh` — duplikat
+gh-push-big.sh yang TIDAK menghapus work-dir setelah push. Push pertama
+tetap bayar lazy-fetch sekali (~4-6 menit), push berikutnya di sesi yang
+sama hanya hitungan detik. Hapus work-dir manual di akhir sesi.
+(Lokasi agent: /home/z/my-project/scripts/gh-push-session.sh — tidak ikut
+zip kit, sesi berikutnya bikin ulang 1 menit.)
