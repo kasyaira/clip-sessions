@@ -27,6 +27,7 @@ Di dalam tiap folder sesi:
 | [sesi-11-ray-restu-ngomongin-wapres](./sesi-11-ray-restu-ngomongin-wapres) | Kenapa orang-orang pada ngomongin Mas Wapres? — Ray Restu Fauzi — youtu.be/Z4DgIN7JkEY | 11 clip (utuh 31:44) |
 | [sesi-12-guru-gembul-4-cara-lepas-kemiskinan](./sesi-12-guru-gembul-4-cara-lepas-kemiskinan) | Eps 1072 | 4 CARA LEPAS DARI KEMISKINAN DI INDONESIA — guru gembul — youtu.be/QGU_hSPv9Vw | 12 clip (utuh 29:57) |
 | [sesi-13-felix-siauw-respect-gontor-ulama](./sesi-13-felix-siauw-respect-gontor-ulama) | RESPECT GONTOR! Harusnya Ulama itu Kayak Gini! — Felix Siauw — youtu.be/YoQXtzyT8MI | 6 clip (utuh 15:19) |
+| [sesi-14-guru-gembul-prabowo-mafia-hukum](./sesi-14-guru-gembul-prabowo-mafia-hukum) | GJ 160 | ALASAN PRABOWO TIDAK BISA MELAWAN MAFIA HUKUM DI INDONESIA? — guru gembul — youtu.be/h_pu6qknpRU | 6 clip (utuh 11:32) |
 
 ## Spesifikasi Output
 
