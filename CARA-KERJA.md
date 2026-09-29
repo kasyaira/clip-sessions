@@ -610,3 +610,71 @@ Sesi ini meninggalkan mount `upload/` dalam struktur BERBEDA dari §16-17
 ```
 Jangan pakai Jalur A §17 apa adanya (rsync full) — itu menyalin
 node_modules/whisper per-file LAMBAT; pakai kombo rsync-kode + tarball di atas.
+
+---
+
+# ADDENDUM SESI-15 (video sesi-14: "GJ 160 | ALASAN PRABOWO TIDAK BISA MELAWAN MAFIA HUKUM DI INDONESIA?" — guru gembul)
+
+> Sesi agent ini menjalankan alur §13 end-to-end di workspace warisan (sandbox
+> TIDAK di-reset: ofc-clip-kit/ + node_modules + whisper + chrome masih utuh —
+> rsync §29 instan karena identik). 6 klip full-coverage 0-692.29s (11:32)
+> selesai render + QA + upload dalam satu sesi. Temuan penting baru: §30.
+
+## 30. PENTING: cache transcribe-parts TIDAK ter-key per video — WAJIB bersihkan saat ganti video
+
+Sandbox warisan masih berisi `out/tmp/parts/part-XX.words.json` + `part-XX.wav`
+dari video SESI LALU. `init` memang meng-extract `raw-full.16k.wav` baru, tapi
+`part N` tetap bilang "sudah ada — skip" karena cek idempotensinya hanya
+lihat ADA/TIDAK-nya file cache (tidak ada identitas video). Akibatnya `merge`
+bisa menggabungkan TRANSKRIP VIDEO LAMA ke video baru — salah total tanpa
+error.
+
+**Aturan mulai sekarang**: saat memproses video BARU di workspace bekas
+sesi lama (apapun jalur pemulihannya), SEBELUM `init` jalankan:
+```
+rm -f out/tmp/parts/part-*.wav out/tmp/parts/part-*.words.json \
+      out/tmp/parts/calib-120s.wav out/transcripts/raw.json
+```
+(Ide perbaikan script: simpan hash/durasi video di parts-meta.json dan
+invalidasi cache otomatis — belum di-patch, tugas sesi berikutnya.)
+
+## 31. Catatan operasional sesi ini (semua terverifikasi jalan)
+
+1. Video 692.29s (11:32) 720p **CFR 30fps asli** (full-scan 20.766 paket
+   sorted-pts: 100% di grid 1/30s, 0 drift — §26 terkonfirmasi lagi) →
+   langsung tanpa re-encode.
+2. Download loader.to: kena `UND_ERR_SOCKET` di 92MB → retry sukses.
+   Tool call bisa ke-timeout SETELAH file selesai ter-rename — selalu
+   ffprobe dulu sebelum ulang download (§8 terkonfirmasi lagi).
+3. Kalibrasi whisper 0.92x realtime → part-len 460 → 2 bagian → merge
+   **1.495 kata** mono 0 back-jump.
+4. 6 klip full-coverage 0-692.29s, semua batas di ujung kalimat persis via
+   words-around: 0-128.14 / 128.14-231.06 / 231.06-376.00 / 376.00-472.72 /
+   472.72-552.02 / 552.02-692.29 (user minta eksplisit: tidak boleh ada
+   topik terpotong — video padat, batas diangka di ujung kalimat tuntas).
+5. Urutan render prioritas topik terkuat dulu: clip-03 tantangan-prabowo
+   (topik judul video) → clip-01 sidak-viral → clip-06 uang-haram →
+   clip-02 → clip-05 → clip-04. Setiap klip: rm -rf out/segments →
+   render-retry (masing-masing cukup 1-2 panggilan tool) → finalize →
+   qa_clip.py → upload LANGSUNNG.
+6. QA piksel: 3 frame LOW semuanya micro-pause antar kata / pop-in awal
+   kata (§20.6 + §10.7 terkonfirmasi lagi) — frame tetangga ±1-2s semua
+   OK, QA LULUS.
+7. Upload: 19.5MB & 27.6-27.7MB → git plumbing session (§32); 33.4-39.5MB
+   → git plumbing session. Semua sukses.
+8. `qa_clip.py` kadang exit code -9/255 SETELAH print hasil lengkap
+   (dibunuh saat cleanup) — output QA tetap valid, baca stdout-nya.
+
+## 32. §28 dioptimalkan: gh-push-session.sh VERIFIKASI — push berikutnya 10 detik
+
+`gh-push-big.sh` versi kit menghapus work dir setelah push → SETIAP push
+bayar lazy-fetch blob repo (~8 menit di sesi ini, 2x). Varian §28 dibuat
+di `/home/z/my-project/scripts/gh-push-session.sh` (TIDAK ikut zip kit —
+sesi berikutnya bikin ulang 1 menit, atau copy dari addendum ini):
+
+- WORK dir terpisah `work/gh-push-session/` yang TIDAK dihapus tiap push
+  (+ auto `rm -f .git/index.lock` §28 sebelum jalan).
+- Push pertama: 8m02s (lazy-fetch sekali). Push kedua dst: **10-11 detik**.
+- Token PAT nyangkut di `work/gh-push-session/.git/config` (remote URL) —
+  aman karena DI LUAR kit, tapi **WAJIB `rm -rf work/gh-push-session` di
+  akhir sesi**.
