@@ -1,0 +1,56 @@
+{
+  "sesi": "sesi-13-felix-siauw-respect-gontor-ulama",
+  "tanggal": "2026-09-29",
+  "sumber": {
+    "judul": "RESPECT GONTOR! Harusnya Ulama itu Kayak Gini!",
+    "channel": "Felix Siauw",
+    "url": "youtu.be/YoQXtzyT8MI",
+    "durasi_total": "15:19"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "catatan": "Sumber 1280x720 23.976fps CFR asli (r_frame_rate == avg_frame_rate, full-scan 22.023 paket sorted-pts 100% di grid 1001/24000) dipakai tanpa re-encode. 6 klip full-coverage 0-918.65s, batas potong di batas kalimat persis via words-around. Transkrip 3 bagian (part-len 460, kalibrasi 0.90x realtime, overlap 6) merge 2.127 kata monotonik 0 gap."
+  },
+  "clips": [
+    {
+      "file": "clip-01-agama-dasar-sultan-penjaga.mp4",
+      "topik": "Pembuka dengan kutipan Sheikh Izzuddin Abdul Salam soal syarat mengambil harta rakyat - lalu idealitas relasi ulama & penguasa dari Imam Ghazali (Ihya Ulumuddin): agama adalah dasar/fondasi, sultan/kekuasaan adalah penjaganya - tanpa dasar ambruk, tanpa penjaga hilang; analogi rumah: fondasi ulama, atap kekuasaan, seperti saudara kembar yang wajib kerja sama; ditutup relasi negatif: ulama yang datang pada penguasa hanya mencari harta atau jabatan/kekuasaan",
+      "durasi_detik": 159.3,
+      "part_sumber": "0.00 - 158.85"
+    },
+    {
+      "file": "clip-02-ulama-bukan-juru-bicara-penguasa.mp4",
+      "topik": "Yang bagus adalah penguasa yang datang pada ulama, bukan sebaliknya - ulama boleh datang hanya untuk memberi nasihat/kritik atau amar ma'ruf nahi munkar; konteks Indonesia: presiden datang pada ulama dan mendengarkan; kenapa sosok Yai Hassan Abdullah Sahal (Gontor) fenomenal dan viral: orang merindukan ulama pemberi nasihat, bukan ulama penanda tangan peluncuran buku Islam ala Prabowo yang terkesan jadi juru bicara & melindungi kepentingan penguasa",
+      "durasi_detik": 161.7,
+      "part_sumber": "158.85 - 320.11"
+    },
+    {
+      "file": "clip-03-pemimpin-penggembala-dan-ayah.mp4",
+      "topik": "Cerita relasi ideal Umar bin Abdul Aziz dengan Imam Hasan Al-Basri: khalifah datang terakhir di masjid; surat balasan yang jadi acuan politik sepanjang sejarah: pemimpin itu seperti penggembala dan seperti ayah - hewan/anak kecil dikasih makan, yang dewasa diajari, yang tua diperhatikan (sindiran program pemerintah: sesuaikan dengan umur, bukan digebur); diingatkan jangan memerintah hamba-hamba Allah dengan keji dan sewenang-wenang karena Allah yang punya akan minta pertanggungjawaban; mindset ulama: kerjaanku ilmu dan arah ketaatan pada Allah, tidak perlu gengsi diundang ke Istana - kalau ada kepentingan, penguasa yang datang ke masjid",
+      "durasi_detik": 203.9,
+      "part_sumber": "320.11 - 523.50"
+    },
+    {
+      "file": "clip-04-fatwa-jual-dulu-jam-miliaran.mp4",
+      "topik": "Perang Ain Jalut melawan tentara Tatar dipimpin Saifuddin Qutuz: kaum muslimin kekurangan logistik, mengumpulkan ulama untuk fatwa mengambil harta rakyat - hampir semua ulama setuju; Sheikh Izzuddin Abdul Salam (bergelar Sultanul Ulama) menolak dengan syarat: boleh mengambil dharibah/pungutan khusus non-permanen dari orang kaya saja, dengan syarat Baitul Mas Mal kosong dan para tentara/pejabat menjual dulu semua barang mewah mereka - sekarang: jam miliaran, tas ratusan juta, baju pakai - hanya menyesakan kuda dan senjata; kalau zaman sekarang wajib jual dulu sebelum open donation gempa, itulah ulama yang memberi nasihat dengan ilmu, bukan sekadar jadi legitimasi penguasa",
+      "durasi_detik": 195.3,
+      "part_sumber": "523.50 - 718.37"
+    },
+    {
+      "file": "clip-05-pukulan-pembuka-konstantinopel.mp4",
+      "topik": "Relasi sultan & ulama dari keluarga Kesultanan Usmani: Ertugrul menyerahkan Osman pada Syed Bali - taat pada dia lebih daripada pada aku, karena aku cuma bapakmu sedangkan dia cahaya yang membimbingmu dengan ayat-ayat Allah; murad kedua menyerahkan Muhammad Al-Fatih dengan ketaatan total pada gurunya; guru Al-Kurani memukul Al-Fatih dengan kayu supaya taat - dan Al-Fatih berkata 'Dari pukulan itulah aku bisa membebaskan Konstantinopel'; yang dihormati bukan orangnya tapi ilmunya (plus selipan joke Khabib vs beruang di Dagestan)",
+      "durasi_detik": 133.6,
+      "part_sumber": "718.37 - 851.53"
+    },
+    {
+      "file": "clip-06-ulama-tak-bisa-disetir.mp4",
+      "topik": "Penutup pesan utama: relasi ideal adalah ketika ulama punya marwah - pepatah: kehormatan itu terletak pada harta dan kemuliaan itu terletak pada ilmu; ulama pasti punya ilmu, sayang banyak yang tak bisa menjaga dari harta - kalau tidak gila harta dan sudah punya ilmu plus harta yang tidak tergantung pada siapapun, kemandirian ilmu akan membawa perubahan; karena ulama itu tidak bisa disetir - dia sudah disetir oleh Allah SWT, tidak takut pada siapapun karena takutnya hanya ditaruh pada Allah SWT",
+      "durasi_detik": 67.6,
+      "part_sumber": "851.53 - 918.65"
+    }
+  ]
+}
