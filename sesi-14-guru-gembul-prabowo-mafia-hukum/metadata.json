@@ -1,0 +1,56 @@
+{
+  "sesi": "sesi-14-guru-gembul-prabowo-mafia-hukum",
+  "tanggal": "2026-09-29",
+  "sumber": {
+    "judul": "GJ 160 | ALASAN PRABOWO TIDAK BISA MELAWAN MAFIA HUKUM DI INDONESIA?",
+    "channel": "guru gembul",
+    "url": "youtu.be/h_pu6qknpRU",
+    "durasi_total": "11:32"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "catatan": "Sumber 1280x720 30fps CFR asli (r_frame_rate == avg_frame_rate == 30/1, full-scan 20.766 paket sorted-pts 100% di grid 1/30s, 0 drift) dipakai tanpa re-encode. 6 klip full-coverage 0-692.29s, batas potong di batas kalimat persis via words-around. Transkrip 2 bagian (part-len 460, kalibrasi 0.92x realtime, overlap 6) merge 1.495 kata monotonik 0 gap. Prioritas render topik terkuat dulu: clip-03 (tantangan Prabowo, topik judul video) -> clip-01 -> clip-06 -> clip-02 -> clip-05 -> clip-04."
+  },
+  "clips": [
+    {
+      "file": "clip-01-sidak-ombudsman-fasilitas-mewah.mp4",
+      "topik": "Pembuka salam + video dipersembahkan untuk Ibu Shafrida Rasahan & Bapak Fikri Yasin yang memimpin sidak ombudsman ke lapas; rekonstruksi momen viral temuan fasilitas mewah untuk koruptor: ada mobil, kamar mewah, 'Bapak tangan saya sakit', dan rencana minigolf 'untuk binaan'; tanggapan guru gembul atas sindiran 'kalau saya menteri': tidak masalah lapas punya hotel - di penjara itu manusia bukan binatang, binatang saja diberi kandang yang bagus; ditutup pivot: selama ini kita capek mencacimaki pejabat dan menyindir koruptor, sekarang luangkan waktu untuk mengapresiasi para pahlawan",
+      "durasi_detik": 128.6,
+      "part_sumber": "0.00 - 128.14"
+    },
+    {
+      "file": "clip-02-dua-pahlawan-vs-mafia-hukum.mp4",
+      "topik": "Apresiasi mendalam untuk dua pejabat ombudsman: masih ada pejabat Indonesia yang baik, berintegritas, beriman, masih menjalankan tugas sebaik-baiknya; mereka tidak hanya menjalankan tugas saat sidak - mereka mempertaruhkan karir dan bahkan nyawa karena langsung berhadapan dengan mafia hukum & mafia peradilan Indonesia yang bejad dan kejamnya luar biasa; terima kasih & ingin cium tangan mereka karena menunjukkan Indonesia masih punya harapan; pembanding: kalau baraya di posisi mereka mungkin tidak akan berani - seherois itu tidak akan dilakukan oleh Pak Prabowo Subianto, Pak Gibran, Pak Luhut Binsar Panjaitan, apalagi Pak Seskap TNI",
+      "durasi_detik": 103.4,
+      "part_sumber": "128.14 - 231.06"
+    },
+    {
+      "file": "clip-03-tantangan-prabowo-tahu-atau-tidak.mp4",
+      "topik": "Fakta mafia hukum menguasai lapas (topik judul video): dengan kekuatan uang para penjahat keluar-masuk penjara seenaknya, sipir tidak lebih dari babu & jongwes narapidana, setiap sel diperjualbelikan - semua sudah tahu; bukan sekali dua kali disidak, ada 8 kali kasus terbongkar dan fasilitas mewah itu ada di setiap penjara Indonesia, itu mainan mafia hukum; dari dulu tidak banyak pejabat yang berani menyelesaikan; presiden RI sekarang yang katanya latarnya militer dan siap mengorbankan jiwa raga tidak pernah berani sidak seperti dua pejabat tadi; TANTANGAN terbuka untuk pendukung pemerintah, jawab: Prabowo tahu atau tidak? Tiga skenario: tidak tahu = presiden buta dan tuli soal amanah; tahu tapi tidak bisa = untuk apa jadi presiden, dia punya otoritas dan kekuatan; tahu, bisa, tapi tidak mau = lebih parah lagi, berarti bagian dari jaringan kejahatan nasional, bagian dari mafia hukum dan peradilan Indonesia",
+      "durasi_detik": 145.4,
+      "part_sumber": "231.06 - 376.00"
+    },
+    {
+      "file": "clip-04-dukung-dua-pahlawan.mp4",
+      "topik": "Puncak kontras: ketidakberanian Pak Prabowo & pejabat lain untuk membongkar dan menyelesaikan masalah ini justru ditunjukkan kebalikannya oleh dua orang ombudsman itu; ajakan konkret ke baraya semua yang menonton: mari dukung orang-orang seperti Ibu Shafrida dan Bapak Fikri Yasin - setidaknya kirimkan doa agar hidup mereka baik, harapan dan cita-citanya tercapai, semakin banyak yang mencintai mereka; cari tahu kondisi dan kebutuhannya, mungkin ada yang bisa dibantu; orang-orang seperti itu langka di Indonesia yang berani mempertaruhkan karir dan nyawa untuk menunjukkan masih ada harapan; kita sudah capek membahas pejabat yang selalu menampilkan kabar buruk - ketika ada kabar baik, ayo kita apresiasi",
+      "durasi_detik": 97.2,
+      "part_sumber": "376.00 - 472.72"
+    },
+    {
+      "file": "clip-05-kutukan-koruptor-dan-antek.mp4",
+      "topik": "Kebalikan dari apresiasi - kutukan: doakan semoga para koruptor dan antek-anteknya (sipir yang tidak benar, para pengacara yang tidak benar, petugas dan aparat yang tidak benar) semua dikutuk penderitaan dalam kehidupan, kecuali mereka mau bertobat dan mengembalikan semua harta yang mereka ambil kepada orang yang membutuhkan; pesan langsung untuk para koruptor dan penjahat Indonesia: kami rakyat Indonesia adalah orang yang dizolimi dan disakiti, doa kami akan didengar oleh Allah SWT - segera bertobat dan berhati-hati; kalian orang-orang yang tidak amanah, penyalah guna wewenang, pengkhianat bangsa, mengecewakan negara, tidak berempati kepada rakyat - kalian jahat",
+      "durasi_detik": 79.8,
+      "part_sumber": "472.72 - 552.02"
+    },
+    {
+      "file": "clip-06-uang-haram-tobat-ke-rakyat.mp4",
+      "topik": "Nasihat keras penutup untuk koruptor: rejeki, gaji, dan uang yang masuk saku kalian selama ini adalah uang haram - kalian memberi makan jasad kalian dan jasad keluarga kalian dengan uang haram; di situ ada uang dan rejeki kami yang dirampas dan kalian makan, kami tidak pernah ikhlas maka kami berdoa keburukan menimpa kalian dan kalian tidak bisa menikmati kebahagiaan di dunia dan akhirat; syarat tobat yang sering salah dipahami: dosa kalian bukan hanya kepada Tuhan tapi kepada rakyat Indonesia - selama kami tidak memberi maaf, tobat kalian tidak akan pernah diterima; datang kepada kami minta maaf dan kembalikan hak-hak kami (hak negara, hak rakyat, hak warga negara); kalau tidak bisa mengembalikan, kami hanya bisa berdoa semoga kalian dikutuk penderitaan dunia dan akhirat; penutup channel: video ini hanya doa - apresiasi untuk orang-orang yang masih berdedikasi dan beriman, kutukan untuk orang-orang durjana; terima kasih, wassalamualaikum",
+      "durasi_detik": 140.7,
+      "part_sumber": "552.02 - 692.29"
+    }
+  ]
+}
