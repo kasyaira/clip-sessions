@@ -678,3 +678,73 @@ sesi berikutnya bikin ulang 1 menit, atau copy dari addendum ini):
 - Token PAT nyangkut di `work/gh-push-session/.git/config` (remote URL) —
   aman karena DI LUAR kit, tapi **WAJIB `rm -rf work/gh-push-session` di
   akhir sesi**.
+
+---
+
+# ADDENDUM SESI-16 (video sesi-15: "UST FELIX SIAUW TAJEM BANGET MULUTNYA! WENDI & ANDHIKA JADI NGERI!" — Ngobrol di WA Eps.73, Wendi Cagur)
+
+> Sesi agent ini menjalankan alur §13 end-to-end setelah sandbox reset (root
+> project kosong, mount `upload/` selamat seperti §16). Video TERPANJANG di
+> project ini: 69:11 (4151.12s) → intro jingle suara air 0-457.5s di-skip
+> (preseden §23.2), full-coverage ucapan 457.5-4151.12s = **24 klip** selesai
+> render + QA + upload dalam satu sesi. User minta kit diambil DARI REPO.
+
+## 33. Pemulihan versi "kit dari repo" — kombinasi tercepat terverifikasi
+
+User eksplisit minta "ambil klip kit dari repo dan file cara kerja md".
+Urutan pemulihan yang terbukti (~5 menit total):
+
+1. `CARA-KERJA.md` + `ofc-clip-kit.zip` di-download dari root repo via
+   Contents API → zip di-extract ke `ofc-clip-kit/` (zip TANPA folder
+   induk — `mkdir -p ofc-clip-kit && unzip -d ofc-clip-kit/`).
+2. whisper.cpp TER-BUILD + model: `cp -a upload/ofc-clip-kit/whisper.cpp
+   ofc-clip-kit/` — 29 detik (model 487MB = 1 file besar sekuensial, cepat).
+3. node_modules: **JANGAN `cp -a`** (file kecil ribuan → timed out 5 menit,
+   terhenti setengah). Cache-pack tarball juga TIDAK berisi node_modules
+   penuh — hanya `node_modules/.remotion/chrome-headless-shell`. Solusi
+   tercepat: `npm ci` = **8,6 DETIK** (npm cache lokal masih hangat) lalu
+   `tar xzf upload/clip-kit-cache.tar.gz -C . node_modules/.remotion`
+   (7 detik) untuk chrome.
+4. `bash scripts/bootstrap.sh` → harus skip semua (verifikasi).
+
+## 34. ENOSPC terjadi 3x — daftar pemakan disk yang WAJIB dipantau
+
+Disk sandbox cuma 9.9GB; render 24 klip (612MB sumber + ~1GB output)
+menabrak batas 3x (gejala: render mati diam-diam errno -28 di
+screenshotTask). Pembersihan yang terbukti, urut dampak:
+
+1. **`/tmp/my-project` = 5.4GB SALINAN BASI** project dari sesi lalu (isi
+   ofc-clip-kit 2.8G + upload 1.9G lama) — ditemukan sesi ini, HAPUS TOTAL
+   (dir kosongnya "Operation not permitted", biarkan). SELALU cek
+   `du -sh /tmp/*` saat ENOSPC.
+2. `out/tmp/finalize/` — intermediat concat/audio per klip menumpuk ~1GB
+   setelah ~20 finalize. Aman dihapus tiap beberapa klip (file final sudah
+   di out/clips).
+3. `out/tmp/parts/*.wav` + `work/raw-new.mp4` (duplikat raw.mp4) — ~850MB,
+   aman dihapus setelah merge transkrip selesai.
+4. Klip yang SUDAH ter-upload repo → hapus salinan lokalnya di out/clips
+   (repo = source of truth; push terverifikasi OK dulu).
+5. `/tmp/react-motion-render*` menumpuk tiap percobaan render gagal.
+
+## 35. Catatan operasional sesi ini
+
+1. Video 4151.12s 720p **CFR 25fps asli** (full-scan 103.776 paket sorted:
+   100% grid 0.04s, 0 gap) → tanpa re-encode. loader.to smooth sekali jalan
+   (612MB; tool call timeout SETELAH file selesai — ffprobe dulu, §8).
+2. Kalibrasi whisper 0.66x realtime → part-len 460 → **10 bagian** → merge
+   9.145 kata mono 0 back-jump. Bagian 0 hanya 86 kata (intro jingle ikut
+   kepotong bagian pertama — normal).
+3. 24 klip full-coverage ucapan, semua batas ujung kalimat via words-around.
+   Klip 80-239s; clip-07 (94.8s) & clip-20 (80s) di bawah 111s boleh karena
+   topik tuntas (preseden §27.2 klip 67.6s).
+4. QA piksel: 9 klip ada frame LOW, SEMUA micro-pause antar kata/frasa
+   cepat (§20.6 terkonfirmasi N-kali) — frame tetangga ±1s selalu OK.
+   `qa_clip.py` butuh PATH file (bukan clip-id) + exit -9/255 setelah print
+   hasil adalah normal (§31.8).
+5. Upload: 19.5MB & 25-32MB juga lewat git plumbing (Contents API cuma
+   dipakai metadata/README — file <5MB). `gh-push-session.sh` (§32) dibuat
+   ulang di `scripts/` agent: push pertama lazy-fetch sekali, push 2-24
+   masing-masing ~10 detik. 24 klip + metadata + README semua sukses.
+6. Prioritas render topik terkuat dulu: logika-vs-perasaan → empati-rosul
+   → pemimpin-bodoh → penutup → curhat-wendi → dst (urutan lengkap di
+   metadata.json).
