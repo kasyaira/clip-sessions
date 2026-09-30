@@ -1,0 +1,164 @@
+{
+  "sesi": "sesi-15-felix-siauw-tajem-mulutnya",
+  "tanggal": "2026-09-30",
+  "sumber": {
+    "judul": "UST FELIX SIAUW TAJEM BANGET MULUTNYA! WENDI & ANDHIKA JADI NGERI! - NGOBROL DI WA EPS.73",
+    "channel": "WENDI CAGUR",
+    "url": "youtu.be/19wp7L1-9mk",
+    "durasi_total": "69:11"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width, posisi dinaikkan)",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "catatan": "Sumber 1280x720 25fps CFR asli (full-scan 103.776 paket sorted-pts 100% di grid 1/25s, 0 gap, 0 drift) dipakai tanpa re-encode. Video terpanjang di project ini (69:11): intro jingle suara air 0-457.5s di-SKIP (preseden §23.2), full-coverage ucapan 457.5-4151.12s jadi 24 klip, semua batas di ujung kalimat persis via words-around. Transkrip 10 bagian (part-len 460, kalibrasi 0.66x realtime, overlap 6) merge 9.145 kata monotonik 0 gap. Prioritas render topik terkuat dulu: clip-03 (Islam logika vs perasaan) -> clip-22 (empati cara Rosul) -> clip-16 (pemimpin bodoh saat ulama tiada) -> clip-24 -> clip-01 -> clip-13 -> clip-08 -> clip-14 -> clip-21 -> clip-19 -> clip-15 -> clip-17 -> clip-02 -> clip-04 -> clip-05 -> clip-06 -> clip-07 -> clip-09 -> clip-10 -> clip-11 -> clip-12 -> clip-18 -> clip-20 -> clip-23."
+  },
+  "clips": [
+    {
+      "file": "clip-01-wendi-merasa-gagal.mp4",
+      "topik": "Pembuka curhat Wendi Cagur: beberapa waktu lalu ketemu Ustad Felix Siauw bicara cara kerja takdir - satu tambah satu gak selalu dua; pertanyaan suara hati: kenapa gue bisa salah banyak ini, apakah bagian dari takdir; curhat video 'Dear Allah I'm Done': investasi ke orang baik gagal, proyek dakwah yang diyakini jadi the next big thing gagal, dari segi uang dan pertemanan semua gagal - merasa bodoh dan gagal banget",
+      "durasi_detik": 132.5,
+      "part_sumber": "457.50 - 589.98"
+    },
+    {
+      "file": "clip-02-suara-hati-jangan-didengarkan.mp4",
+      "topik": "Jawaban Felix: kalau mati hari ini siapa yang ngelanjutin - merasa gagal, tapi kalau sukses semua perencanaan terasa mulus dan Allah tidak membiarkan manusia merasa seperti itu; sampai titik 'Allah I'm done' baru Allah tunjukkan caranya - rencanamu sampah, ini yang bener; suara hati sengaja tidak didengarkan karena less likely bener: contoh marah sama istri jangan dengar suara hati, tahan; ganti pertanyaannya: kalo Rosul ada di sini, responsnya seperti apa, ridho atau tidak; kalo salah tetap bisa dipertanggungjawabkan",
+      "durasi_detik": 178.0,
+      "part_sumber": "590.00 - 768.00"
+    },
+    {
+      "file": "clip-03-islam-logika-bukan-perasaan.mp4",
+      "topik": "Lalu dengar siapa? Suara Allah lewat pola - agama itu sangat mudah seperti matematika, 'God must be a mathematician' karena bekerja dengan pola dan kepastian; dunia jaman sekarang justru melatih orang ngikutin perasaan bukan logika (contoh: lahir punya burung belum tentu laki-laki, feeling menang atas logika) sedangkan Islam ngajak logika; sabar = tidak baper = tidak bergantung pada perasaan; Rosul nangis waktu anaknya meninggal: air mataku mengalir hatiku bersedih tapi lisanku tidak mengucapkan selain yang diridhoi - emosi diakui, perbuatan tetap ikut logika",
+      "durasi_detik": 196.9,
+      "part_sumber": "768.00 - 964.91"
+    },
+    {
+      "file": "clip-04-tiga-jenis-pilihan.mp4",
+      "topik": "Di persimpangan keputusan (bisnis, karir, keluarga): kenapa milih isti gak bisa dijelaskan - itu jawaban yang diharapkan; tiga jenis pilihan dalam Islam: ISTIFA pilihan Allah langsung tanpa campur tangan siapa pun (Mustafa si terpilih), ISTIBA pilihan selera/nyaman tanpa logika (kenapa milih dia - gak tau, nyaman aja; cantik padahal banyak yang lebih), dan IHTIYAR pilihan logis yang harus ada argumen",
+      "durasi_detik": 115.0,
+      "part_sumber": "965.00 - 1080.00"
+    },
+    {
+      "file": "clip-05-ihtiar-panggil-ahlinya.mp4",
+      "topik": "Praktik ihtiar: makin detail makin kecil kemungkinan salah; mau bisnis modal 5 miliar panggil konsultan bisnis BUKAN ustad - cerita nyata konsultan tempat & produk: karena jualan maka tempatnya murah, cari lagi produk lebih bagus; nanya 'harus sedekah berapa biar usaha lancar' itu salah wilayah - bukan ihtiar tapi istifa; nikah: syarat dulu, baru istiba (selera), baru ihtiar (tes kesehatan); kalau sudah ihtiar mati-matian tapi gagal: aku bukan gagal, aku menemukan cara untuk sampai titik ini - besok mau lebih jauh ubah formulanya",
+      "durasi_detik": 140.0,
+      "part_sumber": "1080.00 - 1220.00"
+    },
+    {
+      "file": "clip-06-jangan-dipenjara-masa-lalu-masa-depan.mp4",
+      "topik": "Curhat Wendi sebagai kepala keluarga: dari awal tahun gonjang ganjing arah kurang jelas, harus berpikir lebih panjang; jangan memenjarakan diri dengan memikirkan masa lalu (sudah terjadi, tak bisa diulang) dan masa depan (belum terjadi); normal sebagai ayah takut tidak bisa menafkahi walau rejeki diatur Allah - kita mediatornya; tafsir ulama atas 'wala hum ya-zanun': sedih itu soal masa lalu, takut itu soal masa depan",
+      "durasi_detik": 167.0,
+      "part_sumber": "1220.00 - 1387.00"
+    },
+    {
+      "file": "clip-07-dua-makhluk-ngejar-manusia.mp4",
+      "topik": "Takdir tidak perlu dipikirkan seperti suara hati - takdir urusan perkara yang tidak bisa dikendalikan, cukup beriman; yang harus diimani: Allah pasti memberi rezeki selama manusia masih hidup; kata ulama dua makhluk mengejar manusia dan pasti dapat: ajal dan rezeki - rezeki bahkan duluan, 'sudah selesai' baru ajal masuk; artinya selama belum mati rezeki pasti masih ada",
+      "durasi_detik": 94.8,
+      "part_sumber": "1387.24 - 1482.00"
+    },
+    {
+      "file": "clip-08-jangan-keracunan-takdir.mp4",
+      "topik": "Tapi urusan yang BISA di-ihtiar wajib dievaluasi - taubat nasuha tiga syarat: yang lalu disesali, yang berjalan dihentikan, yang belum terjadi dicegah; Rasulullah sendiri evaluasi pasca perang Uhud; banyak orang keracunan takdir: miskin bukan takdir - contoh tipis sakit pergi ke dokter, yang menyembuhkan Allah TAPI bilang 'Allah yang nyembuhin bukan dokter jadi gak usah ke dokter' itu dosa; kemiskinan struktural ditambah doktrin agama yang salah ('miskin gak apa-apa yang penting akhirat kaya') - itu tidak ada dalam Islam",
+      "durasi_detik": 198.0,
+      "part_sumber": "1482.05 - 1680.00"
+    },
+    {
+      "file": "clip-09-iman-justru-semangat-nyari-rezeki.mp4",
+      "topik": "Harusnya umat Islam kaya atau tidak? Dalam Islam kaya-miskin tidak pengaruh yang penting berusaha memenuhi kewajiban; rezeki yang sudah pasti justru bikin semangat cari - ibarat janjian yang jelas (Jumat jam 10 di rumah) bikin siap-siap baju bagus dan hitung cara ke sana versus janjian ambigu bikin males; orang yang gak semangat nyari rezeki berarti gak yakin takdir Allah - orang iman justru semangat",
+      "durasi_detik": 119.9,
+      "part_sumber": "1680.12 - 1800.00"
+    },
+    {
+      "file": "clip-10-miskin-kurang-literasi.mp4",
+      "topik": "Banyak orang miskin itu bukan kurang iman tapi kurang literasi - ayat pertama yang turun IQRA (baca) dengan nama Tuhanmu, bukan ayat iman: beriman pun perlu baca; Wendi: sebagai orang tua sering mikir sudah jadi provider yang baik belum - semua tanggung jawab ada di suami; solusi sederhana: 'Bapak sekarang lagi gak punya, nanti kalau punya kita ke situ lagi, sekarang yuk kita bareng-bareng' - itu juga pendidikan keluarga",
+      "durasi_detik": 120.9,
+      "part_sumber": "1800.00 - 1920.85"
+    },
+    {
+      "file": "clip-11-intuisi-harus-diupgrade.mp4",
+      "topik": "Wendi: dulu sangat mengandalkan intuisi dalam ambil keputusan tapi belakangan sering salah terus sampai ada rasa bersalah; Felix lewat buku Blink (Malcolm Gladwell) dan Thinking Fast and Slow: otak default-nya fast dan santai, mikir itu harus slow - tapi ada cara berpikir cepat tapi tepat namanya intuisi, dan intuisi HRD beda dengan intuisi pegawai bisnis karena suara hatinya sudah di-upgrade data lebih banyak",
+      "durasi_detik": 126.0,
+      "part_sumber": "1921.01 - 2046.98"
+    },
+    {
+      "file": "clip-12-data-membuat-intuisi-tajam.mp4",
+      "topik": "Semua intuisi tergantung data yang kita punya - contoh: orang Palembang lihat pempek doang sudah tau enak atau tidak; chef 50 tahun milih makanan dari display sembarangannya lebih tepat daripada kita yang serius; guru yang ngajar 20 tahun bisa baca 'ini muridnya dari mana, ngikutin ustad siapa'; kalau mau lihat bisnis bawa teman yang jago bisnis - sembarangannya yang terlatih menang daripada kita yang serius tapi gak terlatih",
+      "durasi_detik": 154.0,
+      "part_sumber": "2047.05 - 2201.00"
+    },
+    {
+      "file": "clip-13-stop-jump-into-conclusion.mp4",
+      "topik": "Kenapa saat ada bencana/musibah respon orang langsung 'kurang sedekah lu'? Istri dompet hilang, pertanyaan logis 'terakhir kali liat di mana, kan tadi masih bayar' tapi yang gampang: 'kurang sedekah lu!' - itu namanya jump into conclusion karena otak mau cepat dan mau happy; yang gak boleh mikir malah tinggal hina orang; Nabi menjelaskan kenapa anak perempuan dibunuh dengan argumen panjang - jawaban orang jahat semuanya tanpa mikir; agama justru menyuruh mikir",
+      "durasi_detik": 157.9,
+      "part_sumber": "2202.00 - 2359.93"
+    },
+    {
+      "file": "clip-14-pesantren-rubuh-bukan-takdir.mp4",
+      "topik": "Pesantren rubuh dijawab ustaznya 'kodrat Allah, sudah takdir' - padahal itu bukan takdir: pondasinya dari awal tidak dihitung ahli, dirancang untuk hancur; kalau bilang takdir Allah berarti menyalahkan Allah; cerita ibu-ibu 'dihypnotis uang hilang': sebenarnya otaknya bohongin diri supaya gak disalahin; vet accompli dan kena scam padahal tau lagi di-scam tapi tetap beli lalu ngarang ke istri 'ini lebih mahal tapi lebih bagus' - semua bukan takdir, kita yang mengizinkan terjadi",
+      "durasi_detik": 238.9,
+      "part_sumber": "2360.09 - 2599.00"
+    },
+    {
+      "file": "clip-15-kita-yang-mengizinkan.mp4",
+      "topik": "Bukan takdir - kita yang mengizinkan itu terjadi dan yang bertanggung jawab; jangan marah sama Allah 'kenapa kau izinkan ini'; orang di lubang ditawari tali sama teman tapi menolak 'Allah yang nolong aku' sampai mati - padahan pertolongan Allah lewat teman itu; kualitas pendidikan: S1 sampai S3 digabung cuma 6% - sulit dapat pemimpin baik kalau pendidikan ancur, 'aku percaya konspirasi kebuduhan dipilih'; kampanye bagi beras dan kaos, orang cepat lupa",
+      "durasi_detik": 179.1,
+      "part_sumber": "2599.02 - 2778.10"
+    },
+    {
+      "file": "clip-16-pemimpin-bodoh-saat-ulama-tiada.mp4",
+      "topik": "Pemimpin cerminan rakyat yang memilih; hadis Rosul: Allah mencabut ilmu dengan mengawafatkan para ulama - begitu ulama tidak ada, efek langsungnya terpilih pemimpin-pemimpin yang bodoh, lalu dia bikin kebijakan kacau yang menghancurkan semua orang; yang terjadi sekarang tidak ada pemilihan berdasarkan skill tapi kedekatan - menteri yang ngurus hutanan bukan lulusan kehutanan ('panggil saya Coach' joke); Wendi bantahan: rakyat punya effort cuma fokusnya salah (urusan artis jadi detektif); small minds talk about people, average minds talk about events, great minds talk about ideas",
+      "durasi_detik": 198.0,
+      "part_sumber": "2782.10 - 2980.10"
+    },
+    {
+      "file": "clip-17-adab-mengoreksi-pemimpin.mp4",
+      "topik": "Koreksi pemimpin ada aturannya - jangan dimaki jangan di-upload di story; contoh paling gamblang shalat berjamaah: imam salah bacaan cukup bilang 'subhanallah', kalau gak sadar tetap ikuti sampai selesai karena penting berjamaah - habis salam baru konfirmasi 'Pak tadi kayanya tiga rokaat', cek CCTV, kekurangannya ditambal sujud sahwi; level perusahaan: sampaikan lewat jalur yang benar karena bos belum tentu selalu ada",
+      "durasi_detik": 200.0,
+      "part_sumber": "2980.10 - 3180.10"
+    },
+    {
+      "file": "clip-18-jihad-literasi-buya-hamka.mp4",
+      "topik": "Kalau tidak punya akses langsung ke pemimpin: didik masyarakat, naikkan literasi - preseden sejarah Eropa sebelum renaisans: ulama dan pendita diam ikut penguasa, rakyat tertekan, justru para seniman yang maju memancing pencerahan; tokoh-tokoh renaisans diusir dari kotanya; Buya Hamka pernah ditangkap dengan tuduhan pengkhianat negara menjual negara ke Malaysia - nanti direhabilitasi jadi pahlawan; quote Pak Mahfud: sekarang tidak ada satu pun organisasi Islam yang melakukan amar makruf nahi mungkar - yang ada malah di podcast",
+      "durasi_detik": 135.4,
+      "part_sumber": "3180.26 - 3315.64"
+    },
+    {
+      "file": "clip-19-masih-ditegur-berarti-masih-disayang.mp4",
+      "topik": "Media (WA, podcast) bisa jadi senjata jihad kebaikan; suara koreksi yang tidak terdengar tetap harus disampaikan dengan cara baik; marah sama pasangan yang paling ditakuti: silent treatment - di dalam Islam kalau Allah benar-benar marah bukan menghukum tapi mambiarakan (istidraj): pintu-pintu langit dan bumi dibuka 'ambil semuanya' - cuah itu hukuman terbesar; artinya kalau kita masih ngomong sama pemimpin berarti masih sayang sama negara; ibarat nyetir mobil aja di-komen istri 'jangan main HP, rem pelan-pelan' - masa nyetir Indonesia gak mau di-komen rakyat?",
+      "durasi_detik": 235.5,
+      "part_sumber": "3316.33 - 3551.80"
+    },
+    {
+      "file": "clip-20-sejuta-fakta-orang-ignoran.mp4",
+      "topik": "Tapi gimana dengan pepatah 'bicara dengan orang bodoh sejuta fakta pun gak cukup'? Bedakan bodoh dengan IGNORAN - ignoran itu tidak peduli, tidak ada obatnya; Imam Syafi'i pernah ngajak satu orang bodoh berdebat lalu nyesel sampai 'taubat': satu fakta cukup meyakinkan orang pintar, sedekib fakta gak berguna buat orang ignoran; makanya ngajak orang supaya gak ignoran juga butuh pendidikan - itu yang dilakukan Rasulullah",
+      "durasi_detik": 80.0,
+      "part_sumber": "3551.80 - 3631.80"
+    },
+    {
+      "file": "clip-21-khotbah-harus-relevan.mp4",
+      "topik": "Sebagai guru/pendidik tidak boleh bilang 'mereka memang bodoh' - selalu evaluasi diri: apa yang salah dari kita, apa yang bisa di-tweak supaya masuk; contoh khutbah Jumat yang gak relevan (ngotoin pentingnya shalat Jumat ke orang yang JUDUL di dalam masjid); riset: Gen Z attention span 8 detik, 3 detik langsung scroll - yang gak relevan pasti di-skip; untuk dapet duit saja pakai hook terbaik, masa untuk dapet pahala pakai hook biasa-biasa aja?",
+      "durasi_detik": 150.0,
+      "part_sumber": "3631.83 - 3781.84"
+    },
+    {
+      "file": "clip-22-empati-cara-rosul.mp4",
+      "topik": "Jawaban template ('lu gak seberapa susah, Rosul lebih susah, orang Palestina lebih susah') itu bikin orang yang minta tolong jadi merasa dihakimi; bandingkan cara Rosul: ada anak kecil whose burung peliharaannya mati sedih - Rosul tidak menyalahkan,-engaged dulu tanya ke orang tuanya 'burungnya kenapa', lalu cuma bilang 'Ya Aba Umayr, ma fa'ala nunghoir' (Wahai Abu Umayr, apa yang dilakukan burung kecil itu?) - cuma mau ngasih tau 'aku ada di sebelah kamu'; orang sedih kadang butuh bukan solusi tapi kehadiran",
+      "durasi_detik": 131.7,
+      "part_sumber": "3781.84 - 3913.52"
+    },
+    {
+      "file": "clip-23-jangan-bodoh-sebelum-pinter.mp4",
+      "topik": "Kita tidak berharap orang pintar tapi jangan bodoh - itu standar paling bawah; masuk surga tidak harus banyak pahala dulu, yang penting jangan masuk neraka; kenapa Allah ciptakan orang ignoran dan bodoh: jadi pelajaran bagi kalian; 'orang bajingan itu guru terbaik karena kita lebih ingat pain daripada joy'; template empati sederhana: 'saya paham, saya sedang mencari solusi terbaik, akan saya update dalam 24 jam ke depan'",
+      "durasi_detik": 127.2,
+      "part_sumber": "3913.52 - 4040.72"
+    },
+    {
+      "file": "clip-24-takdir-gak-usah-dipikir.mp4",
+      "topik": "Penutup: pemandangan jalanan Jakarta banyak orang bodoh dan ignoran di jalan (lampu merah masih jalan, nyetir gak muterin lampu sen) sampai Wendi mikir 'kenapa sih orang-orang goblok ini diciptain' - jawabannya: bahaya, pelajaran, dan amanah supaya kita bisa buat mereka lebih pintar; kalau tidak ada yang diajarin siapa yang mau diajarin; KESIMPULAN AKHIR: takdir gak usah dipikir, suara hati upgrade aja dengan data yang lebih bagus - insya Allah banyak hal akan berubah lebih baik",
+      "durasi_detik": 110.4,
+      "part_sumber": "4040.72 - 4151.12"
+    }
+  ]
+}
