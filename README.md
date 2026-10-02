@@ -29,10 +29,13 @@ Di dalam tiap folder sesi:
 | [sesi-13-felix-siauw-respect-gontor-ulama](./sesi-13-felix-siauw-respect-gontor-ulama) | RESPECT GONTOR! Harusnya Ulama itu Kayak Gini! — Felix Siauw — youtu.be/YoQXtzyT8MI | 6 clip (utuh 15:19) |
 | [sesi-14-guru-gembul-prabowo-mafia-hukum](./sesi-14-guru-gembul-prabowo-mafia-hukum) | GJ 160 | ALASAN PRABOWO TIDAK BISA MELAWAN MAFIA HUKUM DI INDONESIA? — guru gembul — youtu.be/h_pu6qknpRU | 6 clip (utuh 11:32) |
 | [sesi-15-felix-siauw-tajem-mulutnya](./sesi-15-felix-siauw-tajem-mulutnya) | UST FELIX SIAUW TAJEM BANGET MULUTNYA! WENDI & ANDHIKA JADI NGERI! - NGOBROL DI WA EPS.73 — WENDI CAGUR — youtu.be/19wp7L1-9mk | 24 clip (utuh 69:11, skip jingle intro 7:37) |
+| [sesi-16-imam-sholat-presiden-rebutan](./sesi-16-imam-sholat-presiden-rebutan) | JADI IMAM SHOLAT GAMAU, KENAPA JADI PRESIDEN REBUTAN?! \| RADIO BAHLUL — C8 Podcast — youtu.be/FzvAK5x2RdQ | 20 clip (utuh 55:25, skip iklan read 1:27) |
 
 ## Spesifikasi Output
 
 - Resolusi: 1080x1920 (9:16), 30 fps
 - Caption: popup sederhana, 2-5 kata per grup, highlight kuning kata aktif (karaoke)
-- Watermark: **ofkiehme** (atas-tengah)
+- Watermark: **ofkiehme** (chip atas-tengah, kit v1.1)
+- Badge **source: <nama channel>** di pojok kiri bawah (kit v1.1, mulai sesi-16)
+- Progress bar bawah ala story + washi tape di kartu video (kit v1.1)
 - Durasi per clip: mengikuti durasi topik — 1 topik tuntas = 1 clip (tidak dipotong di tengah topik)
