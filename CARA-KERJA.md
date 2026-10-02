@@ -748,3 +748,127 @@ screenshotTask). Pembersihan yang terbukti, urut dampak:
 6. Prioritas render topik terkuat dulu: logika-vs-perasaan → empati-rosul
    → pemimpin-bodoh → penutup → curhat-wendi → dst (urutan lengkap di
    metadata.json).
+
+---
+
+# ADDENDUM SESI-17 (video sesi-16: "JADI IMAM SHOLAT GAMAU, KENAPA JADI PRESIDEN REBUTAN?! | RADIO BAHLUL" — C8 Podcast)
+
+> Sesi agent menjalankan alur §13 end-to-end setelah sandbox reset (kit diambil
+> dari repo via zip + upload/ mount, pola §33). Dua pekerjaan besar dalam satu
+> sesi: (1) UPGRADE KIT ke v1.1 (badge source, visual) per permintaan user,
+> (2) 20 klip full-coverage 0-3325.05s selesai render + QA + upload. Temuan
+> paling penting: §38 (render crash = disk) dan §39 (upload file besar).
+
+## 36. Pemulihan & operasional transkrip sesi ini
+
+1. Pemulihan §33 terkonfirmasi lagi: zip repo + `cp -a upload/ofc-clip-kit/
+   whisper.cpp` + `npm ci` (8 dtk) + `tar xzf upload/clip-kit-cache.tar.gz
+   node_modules/.remotion` + bootstrap skip-semua = total ~5 menit.
+2. Video 3325.05s (55:25) 720p **CFR 50fps ASLI** (full-scan 166.249 paket:
+   100.000% grid 1/50s) → tanpa re-encode. loader.to 855MB sekali jalan
+   (ter-rename SEBELUM tool call mati — selalu ffprobe dulu, §8).
+3. Kalibrasi whisper 0.90x → part-len 460 → 8 bagian. **Bagian 6 dua kali
+   kebablas limit 10 menit** (load CPU sandbox naik-turun, kecepatan whisper
+   per sesi TIDAK konstan — kalibrasi awal hanya patokan). Solusi baru yang
+   terbukti: **split paruh** — potong wav bagian jadi 2 paruh (overlap 2s),
+   whisper masing-masing paruh (~5 menit, muat di satu panggilan), gabung
+   dengan aturan titik-tengah overlap (A: start < mid, B: start >= mid,
+   waktu B digeser +mid-1). Skrip eksternal agent:
+   `/home/z/my-project/scripts/part-split.mjs` (init|half|join). Hasil merge
+   akhir tetap dicek seperti biasa (mono, 0 back-jump).
+4. Merge 8 bagian = 8.665 kata mono 0 back-jump. §30 (bersihkan cache parts
+   lama SEBELUM init) tetap WAJIB.
+5. 20 klip full-coverage ucapan 0-2024 + 2110.95-3325.05 (iklan read Dilan
+   Macak 2024-2110.95 di-SKIP, preseden §23.2); semua batas ujung kalimat
+   via words-around; durasi 88-243 dtk.
+
+## 37. UPGRADE KIT v1.1 (diminta user: "source:" + visual lebih bagus)
+
+Perubahan yang masuk zip kit terbaru (semua tervalidasi TSC + QA piksel +
+review VLM 8-9/10 sebelum dipakai produksi):
+
+1. **Badge `source: <channel>`** pojok kiri-bawah — komponen baru
+   `src/components/SourceBadge.tsx` (chip frosted + ikon play segitiga CSS
+   murni, tanpa glyph font = bebas tofu). Nama channel mengalir:
+   `render-inputs/clips.json` field `sourceChannel` → build-clips.mjs →
+   `out/data/*.json` → komponen. Kosong = badge hidden otomatis.
+2. **Washi tape** (`TapeCorners.tsx`) — 2 strip translucent menyilang tepi
+   atas kartu, dirender DI LUAR kartu (wrapper terpisah dari div
+   overflow-hidden) supaya boleh menjorok keluar tepi kartu.
+3. **Watermark jadi chip pill** + titik aksen kuning; **progress bar pindah
+   ke bawah** (pill + head dot kuning ala story IG, `position: 'bottom'`);
+   **animasi intro** kartu (scale 0.962 + rise, spring — tanpa fade opacity
+   supaya frame pertama tidak gelap); **subtitle pindah ke area kertas**
+   (centerY 0.595 -> 0.71, sepenuhnya di bawah kartu — VPM merekomendasikan,
+   tidak lagi menumpuk tepi kartu); VIDEO.centerY 0.44 -> 0.465;
+   WATERMARK.top 84 -> 170 (ritme vertikal seimbang).
+4. Semua nilai di `src/config.ts` (single source of truth); README kit
+   di-update; versi package.json 1.1.0.
+5. **QA visual upgrade wajib sebelum produksi**: render still via
+   `qa-frames.mjs <id-test>` (buat data uji manual dari demo-words + video
+   asli + sourceChannel), lalu cek piksel per elemen (script eksternal
+   `scripts/qa_upgrade_check.py`) + 1-2 putaran review VLM
+   (`z-ai vision -i frame.png`). Iterasi VLM: subtitle overlap -> geser
+   centerY; spacing kurang seimbang -> fine-tune watermark/cardY.
+
+## 38. PENTING: render crash "Target closed / Compositor SIGTERM" = DISK /tmp, bukan bug video
+
+Gejala: satu klip (clip-13) gagal render 5+ percobaan, selalu mati di
+frame tertentu (~35-55% segmen 0), error campuran "Protocol error
+(Page.bringToFront): Target closed" + "Compositor quit with signal SIGTERM"
++ proxy 500 pada `?time=<t>`. Diagnosa keliru yang BUKAN penyebab:
+- sumber video zona itu (ffmpeg extract frame OK, dan mini-klip 5 dtk
+  yang MELINTASI zona itu render sempurna)
+- memori (3.2GB bebas), timeout Remotion (sudah dinaikkan tanpa efek)
+
+**Penyebab sebenarnya: disk /tmp mepet (~1.7GB bebas).** Render
+concurrency 2 menaruh bundle (~830MB) + assets compositor (~800MB/proses)
+di /tmp — makin sempit disk, makin cepat compositor mati diam-diam.
+Fix yang terbukti: **bereskan disk sampai >=2.5GB** (hapus salinan lokal
+klip yang SUDAH ter-upload §34.4, /tmp/remotion-*, out/tmp/finalize)
+→ render langsung jalan normal sekali coba. Setelah itu: hapus klip lokal
+otomatis begitu upload OK (sudah ditambahkan ke finish-one.sh agent).
+Urutan diagnosa untuk sesi berikutnya: (1) df -h, (2) mini-klip uji di
+zona crash, (3) baru curiga video/Remotion.
+
+## 39. PENTING: upload file besar — git plumbing MATIKAN untuk repo sebesar ini; Contents API + CRF 26
+
+Repo sudah ±550MB per sesi × 16 sesi. Yang terjadi di sesi ini saat coba
+git plumbing (gh-push-session varian §32):
+
+1. `git push` pada partial clone (blob:none) memicu **lazy-fetch SEMUA blob
+   repo** (bukan sekadar delta-base): work dir bengkak 6.7-7.6GB → ENOSPC
+   → fetch gagal diam-diam (stderr dibuang `2>/dev/null`, exit 128, LOG
+   KOSONG — hati-hati mendiagnosa).
+2. `GIT_NO_LAZY_FETCH=1` bikin `read-tree` instan (0.002s, 196KB) TAPI push
+   tetap butuh verifikasi blob → "fatal: could not fetch <blob> from
+   promisor remote". Jalan buntu dua arah — **jangan pakai git plumbing
+   lagi untuk upload klip di repo ini**.
+3. **Contents API (gh-upload.mjs) = satu-satunya jalur yang jalan**, batas
+   empiris: ±40MB OK (39.5MB lolos), 63-92MB gagal 409 "Timed out
+   validating the rule" (server-side, konsisten, bukan transient).
+4. **Akar masalah ukuran: render Remotion default CRF 18 → klip ~3Mbps =
+   0.4MB/s** (clip 100s = 40MB, clip 243s = 92MB). Fix permanen di kit:
+   `renderMedia({crf: 26})` di render-segments.mjs (HATI-HATI: nama opsi
+   `crf`, BUKAN `x264Crf` — salah nama = diam-diam diabaikan). Hasil: klip
+   20-40MB langsung dari render, QA piksel kuning tetap LULUS.
+5. Klip yang SUDAH kebesaran: re-encode `ffmpeg -crf 26 -preset medium`
+   (243s = 39.3MB, terverifikasi). **`-preset veryfast` PATOLOGIS di CPU
+   sandbox ini** (30 dtk video >5 menit encode, penyebab tidak ketemu;
+   `medium` justru normal 0.3-0.43x realtime) — SELALU pakai medium.
+6. Pipe `cmd | tail -N; echo $?` MENGEMBALIKAN exit code tail, bukan cmd —
+   skrip upload/push harus log ke file (`> log 2>&1`) lalu `echo $?`.
+
+## 40. Pola operasional rantai yang terbukti (20 klip dalam ~5 jam)
+
+- Skrip agent `/home/z/my-project/scripts/`: `clip-cycle.sh` (usang, tergantikan),
+  `finish-one.sh` (finalize → QA 3 titik + auto cek tetangga LOW → upload →
+  bersih-bersih + HAPUS klip lokal setelah upload OK), `chain.sh <id-selesai|->
+  <id-berikut>` (finalisasi klip A + langsung mulai render klip B dengan sisa
+  waktu panggilan tool; marker `out/segments/.clip-id` mencegah reset segmen
+  saat panggilan ulang — JANGAN rm -rf out/segments tanpa cek marker).
+- Rata-rata: klip 100-243 dtk = 2-3 panggilan render + 1 panggilan chain.
+  QA LOW di 5 klip semuanya micro-pause (§20.6 ke-N kalinya) — cek tetangga
+  otomatis di finish-one.sh, semua LULUS tanpa intervensi.
+- Prioritas render topik terkuat dulu (§11): imam-sholat-presiden (judul) →
+  keadilan → circus-and-bread → pemimpin-bodoh-akhir-zaman → sirkel-F → dst.
