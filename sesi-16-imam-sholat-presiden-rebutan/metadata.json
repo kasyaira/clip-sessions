@@ -1,0 +1,141 @@
+{
+  "sesi": "sesi-16-imam-sholat-presiden-rebutan",
+  "tanggal": "2026-10-02",
+  "sumber": {
+    "judul": "JADI IMAM SHOLAT GAMAU, KENAPA JADI PRESIDEN REBUTAN?! | RADIO BAHLUL",
+    "channel": "C8 Podcast",
+    "url": "youtu.be/FzvAK5x2RdQ",
+    "durasi_total": "55:25"
+  },
+  "spesifikasi": {
+    "resolusi": "1080x1920",
+    "fps": 30,
+    "layout": "kertas krem + grain (video card tengah full-width) — KIT v1.1: washi tape di tepi atas kartu, watermark chip @ofkiehme + titik aksen kuning, badge 'source: C8 Podcast' di pojok kiri bawah (chip frosted + ikon play), progress bar pindah ke bawah (pill + titik kuning ala story), animasi intro kartu (scale + rise), subtitle pindah sepenuhnya ke area kertas bawah kartu (tidak lagi menumpuk tepi kartu), bayangan kartu 3 lapis",
+    "caption": "popup karaoke Bahasa Indonesia, 2-4 kata per grup, KATA YANG SEDANG DIUCAP BERUBAH KUNING #FFD60A + membesar 1.08x + glow, lalu fade balik ke putih (timing word-level whisper), kata lain putih 0.85 opasitas + outline hitam 13px",
+    "watermark": "@ofkiehme",
+    "source_channel_badge": "C8 Podcast",
+    "catatan": "Sumber 1280x720 50fps CFR ASLI (full-scan 166.249 paket sorted-pts: 100.000% di grid 1/50s, 0 gap) dipakai tanpa re-encode. Video 55:25: iklan read Dilan Macak Ranchi Caramel 2024-2110.95s di-SKIP (preseden §23.2 jingle/iklan), full-coverage ucapan 0-2024 + 2110.95-3325.05 jadi 20 klip, semua batas di ujung kalimat persis via words-around. Transkrip 8 bagian (part-len 460, kalibrasi 0.90x realtime, overlap 6) merge 8.665 kata monotonik 0 back-jump; bagian 6 ditranskrip via split 2 paruh + merge midpoint (load CPU sandbox naik, whisper satu panggilan kebablas limit 10 menit). Encode render CRF 26 (kit v1.1) supaya klip 20-40MB lolos upload Contents API. Prioritas render topik terkuat dulu: clip-08 (imam sholat vs presiden = judul video) -> clip-04 (inti pemerintahan keadilan) -> clip-06 (circus and bread) -> clip-20 (pemimpin bodoh tanda akhir zaman) -> clip-10 (sirkel inisial F) -> clip-11 (pahala dipindah) -> clip-18 (dipercaya vs kompeten) -> clip-16 (dinasti satu musibah) -> clip-19 (cycle of government) -> clip-12 (kebakaran hutan) -> clip-07 (pemimpin harus mendengarkan) -> clip-03 (pelayan atau tukang perintah) -> clip-17 (Umar bin Abdul Aziz) -> clip-09 (cerita RT) -> clip-05 (Sun Tzu vs iman) -> clip-13 (doain orang jahat) -> clip-14 (taat ulil amri) -> clip-02 (merpati) -> clip-01 (intro) -> clip-15 (intermezzo)."
+  },
+  "clips": [
+    {
+      "file": "clip-01-intro-netizen-resah-pemerintahan.mp4",
+      "topik": "Pembuka Radio Bahlul: siaran dari lokasi yang dua hari dalam setahun sepi (lebarat); netizen resah bukan karena keluarga atau pekerjaan tapi karena situasi dan kondisi negara sampai berpikir 'kok pemerintahannya seperti ini'; dibalik pertanyaan jenaka: pemerintahan mana yang mau lu dusdus? pemerintahan banyak — dari RT, RW, lurah, camat; joke RT Depok yang bikin pindah rumah",
+      "durasi_detik": 165.1,
+      "part_sumber": "0 - 165.10"
+    },
+    {
+      "file": "clip-02-merpati-tiga-koma-lima-juta.mp4",
+      "topik": "Kalau mau ngeluh ke pemerintah harus spesifik siapa — fenomena pemerintah terlihat zolim di sosial media; obrolan merpati balap: pemerintah ngelepasin ribuan merpati, yang disuka bukan merpatinya tapi ANGGARANNYA; ritual 'tumbang' bawa tamu Ebon; pos ronda wajib lapor tapi wajib solat; zodiac Aquarius paling langka versi pemerintah",
+      "durasi_detik": 213.3,
+      "part_sumber": "165.10 - 378.39"
+    },
+    {
+      "file": "clip-03-pemimpin-pelayan-atau-tukang-perintah.mp4",
+      "topik": "Orang yang 4 tahun lalu ngomong pemerintahan itu zolim sekarang jadi pemerintahan; pemimpin itu apa sih: pelayan atau tukang perintah? idealnya pemimpin melayani tapi kadang rakyat butuh diperintah; konslet boleh jatuh, image tidak boleh jatuh — image gak boleh jatuh tapi gambar bisa jatuh (terjun payung)",
+      "durasi_detik": 138.3,
+      "part_sumber": "378.39 - 516.71"
+    },
+    {
+      "file": "clip-04-inti-pemerintahan-keadilan.mp4",
+      "topik": "Inti pemerintahan cuma punya satu tujuan: KEADILAN — ulama bilang pemerintahan kalau adil Allah akan bantu meskipun pemimpinnya bukan muslim; adil itu kompleks (fair vs just: fair itu win-win, just itu adil yang gak harus bagi dua, contoh anak sepuluh tahun dibagi rata); zulm secara harfiah = tidak menempatkan sesuatu pada tempatnya, akar katanya GELAP karena ketidakadilan menggelapkan; contoh literal peci dipakai di dengkul",
+      "durasi_detik": 242.8,
+      "part_sumber": "516.71 - 759.56"
+    },
+    {
+      "file": "clip-05-sun-tzu-vs-iman.mp4",
+      "topik": "Prioritas menurut Sun Tzu: harapan, senjata, makanan — senjata duluan karena selama masih makan masih bisa buat senjata dan perang; harapan lebih penting dari makanan karena tanpa harapan orang defect ke musuh; dalam Islam dibalik: Rasulullah pilih boikot dan lapar demi mempertahankan IMAN — makan jadi tidak penting dibanding keimanan; perut itu tempat penyakit kalau diisi terlalu banyak",
+      "durasi_detik": 144.1,
+      "part_sumber": "759.56 - 903.63"
+    },
+    {
+      "file": "clip-06-circus-and-bread.mp4",
+      "topik": "Perut sebagai alat pengendalian rakyat: kebijakan CIRCUS AND BREAD Romawi — pemerintah korup bikin pertunjukan hiburan supaya orang lupa, kasih roti supaya kenyang dan sibuk nonton, rakyat gak peduli kekayaan alamnya dikorupsi = pengalihan isu / distraksi; bahaya normalisasi kezoliman gara-gara melihat kezoliman terus-menerus — harus ada orang yang tetap bilang 'ini nggak bener, ini bahaya'; penjajahan Belanda: yang dilarang bukan makan tapi PENDIDIKAN (rakyat harus tetap bertenaga untuk dieksploitasi), piramida kasta status belanda — pribumi muslim paling bawah tidak boleh sekolah karena hasil pendidikan adalah pemberontakan / resistance",
+      "durasi_detik": 169.3,
+      "part_sumber": "903.63 - 1072.90"
+    },
+    {
+      "file": "clip-07-pemimpin-harus-mendengarkan.mp4",
+      "topik": "Pemimpin sejauh mana harus mendengar yang dipimpin: harus mendengar apapun meskipun perkara bodoh atau nggak penting, lalu memilah; pemimpin yang terlalu yakin 'gue tau yang terbaik buat lu' sampai gak mau dengar itu TIDAK ETIS — memimpin itu amanah; analogi rumah tangga: anak milih daging atau ayam, dengerin mereka meski keputusan tetap di tangan; kalau keinginan selalu dibuang, rakyat berhenti berpartisipasi dan muncul perlawanan — itu zolim terhadap amanah; batas tipis perhatian vs over-perhatian, PD vs NPD",
+      "durasi_detik": 201.7,
+      "part_sumber": "1072.90 - 1274.62"
+    },
+    {
+      "file": "clip-08-imam-sholat-vs-presiden.mp4",
+      "topik": "PUNCHLINE JUDUL VIDEO: jadi imam sholat aja nggak ada yang mau (menanggung makmum, bacaan harus bagus, gak boleh meleng — padahal jadi makmum enak tinggal ikut), kenapa jadi PRESIDEN banyak yang mau dan berebut?! padahal harus mendengarkan sekian ratus juta penduduk dengan kemauan berbeda-beda dan wajib bersikap adil; zolim ke satu orang dituntut satu orang, zolim ke 275 juta dituntut 275 juta; idealnya pemimpin saling sodor-sodoran kayak orang ngelakuin imam solat di tempat umum",
+      "durasi_detik": 100.0,
+      "part_sumber": "1274.62 - 1374.60"
+    },
+    {
+      "file": "clip-09-cerita-rt-zolim-warga.mp4",
+      "topik": "Cerita jadi RT: jadi ketua RT gara-gara dicemburuin warga (kalon tunggal); warga yang zolim karena ngejorokin dan nggak hadir tapi nonton; surat kematian bisa telat 3 hari — itu kesalahan etis tapi belum kezoliman karena harus ada kerugian yang dirasakan; warga 400 anak satu kakak 60 RT",
+      "durasi_detik": 126.1,
+      "part_sumber": "1374.60 - 1500.69"
+    },
+    {
+      "file": "clip-10-sirkel-inisial-f-ikan-busuk.mp4",
+      "topik": "Pemimpin yang sirkelnya cuma ngasih laporan fit yang bagus-bagus (inisial F!): sering omongnya gak sama kenyataan, jadi zolim tanpa sadar karena gak tau realitas — dosa lebih gede di sirkel yang kasih false informasi, tapi pemimpin juga salah karena punya hak datang dan memverifikasi lapangan; prinsip kepolisian: ada polisi zolim bisa diusut dua tingkat di atasnya — ikan busuk dari kepala",
+      "durasi_detik": 150.6,
+      "part_sumber": "1500.69 - 1651.31"
+    },
+    {
+      "file": "clip-11-pahala-dipindah-akhirat.mp4",
+      "topik": "Hukuman akhirat buat pezolim: orang datang bawa setumpuk pahala (solat, haji, sedekah) lalu ada korban bilang 'Ya Allah aku dulu dizolimi sama dia' — pahalanya dipindah ke korban, sampai habis lalu dosa-dosa orang itu dialihkan kepadanya; joke paspor akhirat: paspor kita lemah di dunia tapi kuat di akhirat, masuk surga lewat jalur WNI; lapor pengadilan untuk kasus debatable karena ada yang playing victim",
+      "durasi_detik": 169.7,
+      "part_sumber": "1651.31 - 1821.00"
+    },
+    {
+      "file": "clip-12-kebakaran-hutan-rencana-strategis.mp4",
+      "topik": "Kebakaran hutan lintas batas: 71 persen kebakaran di wilayah konsesi — 'ini bukan terbakar, ini dibakar' (diduga, menurut keyakinan saya); doa serem untuk pembakar hutan sengaja; korban tidak kelihatan: ISPA mempengaruhi seumur hidup (gak bisa sekolah, gak produktif), kematian dini, janin — ini kayak pembunuhan; respons pemimpin: 'oh kita lagi nyusun rencana strategis' yang sudah disampaikan 3 bulan sebelumnya, berulang tiap tahun tanpa preventif; asap sampai Malaysia-Sarawak sampai sekolah diliburkan; ikan Tapanuli 12 jam di luar kulkas berbakteri neurotoksin",
+      "durasi_detik": 203.0,
+      "part_sumber": "1821.00 - 2024.00"
+    },
+    {
+      "file": "clip-13-doain-orang-jahat.mp4",
+      "topik": "Boleh nggak doain orang jahat? Kisah ngobrol sama Habib Jafar — Rosulullah pernah doain orang jahat: ada orang yang justru lebih berbahaya saat hidup, membahayakan banyak orang, menghilangkan keburukan = kebaikan; pasca Fathu Makkah ada list orang yang harus mati; contoh New Zealand 49 korban masjid — keadilan gak bisa dibayar mati sekali; Hasan bin Ali gak bisa bales dimaki karena gak punya perbendaharaan kata jelek: 'aku pengen balas sih, cuma gak tau gimana caranya'",
+      "durasi_detik": 201.4,
+      "part_sumber": "2110.95 - 2312.36"
+    },
+    {
+      "file": "clip-14-taat-ulil-amri-sampai-batas-mana.mp4",
+      "topik": "Taat ulil amri sampai batas mana? Tidak ada ketaatan pada makhluk dalam bermaksiat kepada Allah — selama tidak disuruh maksiat tetap taat; pemimpin zolim cukup dinasihati (menasihati pemimpin bagian dari kebaikan); yang berat: bayar pajak tetap harus walau kebijakannya gak cocok — memang berat",
+      "durasi_detik": 87.8,
+      "part_sumber": "2312.36 - 2400.13"
+    },
+    {
+      "file": "clip-15-intermezzo-salam-lagu-lapas.mp4",
+      "topik": "Intermezzo radio: baca salam-salam — penulis pidato PRT ('sumpah yang nulis bukan saya'), petani jagung yang gagal pamer merpati, request lagu Silaon Sepan versi lapas koruptor ('ada sama seperti di lapas favoritmu, semua hukum bisa dibeli'); sekuriti studio ternyata jadi backup host; nepotisme vs profesional 'yang kita hire bukan keluarga'",
+      "durasi_detik": 143.0,
+      "part_sumber": "2400.13 - 2543.12"
+    },
+    {
+      "file": "clip-16-dinasti-satu-musibah-keluarga.mp4",
+      "topik": "Dinasti politik dalam sejarah Islam: Khulafaur Rasyidin — Umar ditusuk saat solat, orang-orang bersepakat aklamasi pilih Ibn Umar, tapi Umar menolak: 'cukup satu musibah di keluarga gue' — keluarkan Ibn Umar dari pemilihan, kasih waktu 3 hari; akhirnya terpilih Usman bin Affan; dianggap sebagai musibah, bukan kebanggaan keluarga — jadi pemimpin itu musibah, makan nasi bernyiwang rambut (penggunaan inisial X dan lainnya sebagai bahan candaan sepanjang klip)",
+      "durasi_detik": 152.4,
+      "part_sumber": "2543.12 - 2695.48"
+    },
+    {
+      "file": "clip-17-umar-bin-abdul-aziz-balikin-baiat.mp4",
+      "topik": "Dinasti politik dulu vs sekarang: Umayyah keluarganya Muawiyah, Abbas, dll — di dalam Islam nggak ada putra mahkota tapi kalau terjadi selama memenuhi syarat syar'i jadi boleh; contoh emas Umar bin Abdul Aziz: begitu diangkat dia balikin baiatnya — 'terserah kalian mau pilih siapa' — baru diterima lagi jadi sah; dulu wajar karena pendidikan belum equal (anak raja dapat pendidikan terbaik), sekarang aneh — sekarang pakai alasan 'gue udah tau kinerjanya' padahal konsep sekarang seharusnya kompetisi best of the best",
+      "durasi_detik": 164.5,
+      "part_sumber": "2695.48 - 2860.00"
+    },
+    {
+      "file": "clip-18-dipercaya-vs-kompeten.mp4",
+      "topik": "Orang sekarang lebih suka milih yang DIPERCAYA dibanding yang KOMPETEN — dipercaya sama pemimpin: visi misi gak sesuai bisa diperbalik jadi jahat; untuk PERUSAHAAN boleh (punya dia), tapi untuk NEGARA enggak — pemerintah bukan punya dia, pemerintah itu KITA yang gajinya kita yang bayar; power tends to corrupt, absolute power corrupts — jangan sampai power kumpul di satu orang, harus ada check and balances",
+      "durasi_detik": 128.0,
+      "part_sumber": "2860.00 - 2988.02"
+    },
+    {
+      "file": "clip-19-cycle-of-government.mp4",
+      "topik": "Efek domino dinasti: partai korupsi berhubungan langsung dengan yang berkuasa — orang yang dipercaya justru berpotensi besar korupsi; teori cycle of government (Polybius): tirani -> aristokrasi -> oligarki -> demokrasi -> keos -> tirani lagi, berputar; di Islam: kedaulatan bukan di rakyat tapi di Allah; rakyat yang sebel boleh ngapain? DOA — gak percaya kekuatan doa berarti gak percaya; plus obrolan RT raskin",
+      "durasi_detik": 144.0,
+      "part_sumber": "2988.02 - 3132.02"
+    },
+    {
+      "file": "clip-20-pemimpin-bodoh-tanda-akhir-zaman.mp4",
+      "topik": "Hadis Katharossol (Bukhari-Muslim): kehancuran umat karena ilmu hilang — Allah tidak mencabut ilmu begitu saja tapi mewafatkan para ulama; saat ulama tiadanya terpilih PEMIMPIN BODOH, dia bikin kebijakan bodoh, hancurlah negara; itu sweet revenge orang yang dizolimi: mereka nggak pengen kita belajar; survey jalanan 'milih siapa? kenapa? gemoy' — skill gemoy gak ada hubungannya dengan pemerintahan, yang harus dididik dulu justru pemilihnya; closing: quote Mahfud MD 'kecerdasan tidak hanya dari sekolah, satu-satunya amar makruf nahi mungkar karena gak ada di organisasi muslim ya di podcast' + tanya penutup 'ulama diwafatkan, pemimpin bodoh terpilih — itu tanda akhir zaman?'",
+      "durasi_detik": 193.0,
+      "part_sumber": "3132.02 - 3325.05"
+    }
+  ]
+}
