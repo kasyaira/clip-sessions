@@ -872,3 +872,100 @@ git plumbing (gh-push-session varian §32):
   otomatis di finish-one.sh, semua LULUS tanpa intervensi.
 - Prioritas render topik terkuat dulu (§11): imam-sholat-presiden (judul) →
   keadilan → circus-and-bread → pemimpin-bodoh-akhir-zaman → sirkel-F → dst.
+
+# ADDENDUM SESI-18 (video sesi-17: "#ngopenk OBROLAN SERIUS YANG SEDIKIT ABSURD BERSAMA INDRA FRIMAWAN!" — Tirta PengPengPeng)
+
+> Dua pekerjaan satu sesi lagi: (1) UPGRADE KIT v1.2 per permintaan user
+> ("bakground lebih baik seperti kertas saja, ambil dari stock gratis online,
+> dan reposition") + push zip pengganti, (2) 11 klip full-coverage 0-1137.4s
+> selesai render + QA + upload.
+
+## 41. UPGRADE KIT v1.2 — background kertas stock + reposition
+
+1. **Pemulihan §33 masih valid** (~2 menit): zip repo → cp -a whisper.cpp
+   (model 487MB ada di ROOT whisper.cpp, BUKAN models/ — SDK @remotion/
+   install-whisper-cpp mencarinya di root; salin dua-duanya aman) → npm ci
+   → tar chrome → bootstrap skip semua.
+2. **Cari tekstur stock gratis** — urutan yang terbukti sesi ini:
+   - z-ai image-search: upstream DOWN (400 Bad Request konsisten) — jangan
+     buang waktu lama, langsung fallback
+   - Wikimedia Commons: API jalan TAPI upload.wikimedia.org kena 429
+     rate-limit IP (semua file 2KB HTML error) — CDN-nya diblok, bukan API
+   - rawpixel.com langsung: 403 Cloudflare
+   - **Openverse API JALAN**: `api.openverse.org/v1/images/?q=paper+texture
+     &size=large&license_type=commercial` → JSON lengkap, preview
+     rawpixel CC0 editor_1024 bisa di-curl langsung (6 kandidat sekaligus)
+   - **YouTube oEmbed** (`youtube.com/oembed?url=...&format=json`) =
+     cara tercepat dapat JUDUL + NAMA CHANNEL (author_name) tanpa yt-dlp —
+     berguna utk field sourceChannel; jangan bergantung web-search (juga
+     429/400 sesi ini)
+3. **Preview 1024px cukup tajam** utk kanvas 1080x1920 dengan trik
+   mirror-tile: Lanczos scale ke LEBAR 1080 (1.055x saja), lalu tile
+   vertikal dgn flip-top-bottom bergantian (sambungan tak terlihat utk
+   serat kertas stokastik). JANGAN object-fit: cover dari 1024x536
+   (= stretch 3.5x). Skrip olah: scripts/make-paper-v2.py (agent);
+   provenance+lisensi WAJIB dicatat di public/textures/paper-source.txt.
+4. Pemilihan kandidat: contact sheet PIL + 1 putaran VLM ("pilih kandidat
+   terbaik utk backdrop") — efektif & murah. Kandidat terpilih: kertas
+   kraft oatmeal hangat (serat organik, bersih).
+5. Reposition v1.2 (semua di config.ts): SOURCE badge pindah KIRI-bawah →
+   **KANAN-bawah** (pojok kiri dipakai UI username/caption TikTok/Reels);
+   VIDEO.centerY 0.465→0.455; SUBTITLE.centerY 0.71→0.70; WATERMARK.top
+   170→156; PAPER.color #F1EBDD→#C9C2B7 (match tekstur baru) + vignette
+   0.55→0.42 (tekstur asli sudah punya depth). SourceBadge.tsx: left→right.
+6. QA visual upgrade (wajib sebelum produksi, pola §37.5): qa-make-test.mjs
+   (BARU di kit) — slice 45s video asli + whisper + parsing persis
+   transcribe.mjs (tokenLevelTimestamps + offsets ms + merge token) →
+   out/data/qa-style-test.json; qa-frames render f0/15/60/240/900; cek
+   piksel (tekstur semua zona, kuning kata aktif, scan chip kanan-bawah
+   x580-1030 y1804-1858); VLM grid 3 frame → 8.5/10 LULUS.
+   CATATAN: qa-frames.mjs pakai bundle lama kalau .remotion-bundle/ masih
+   ada — SETELAH ubah style, HAPUS .remotion-bundle dulu supaya re-bundle.
+7. Zip v1.2: JANGAN lupa public/fonts/ (Poppins) + CATATAN-REVISI.md —
+   zip lama berisi keduanya; diff namelist zip lama vs baru sebelum push
+   (scripts agent: diff namelist python zipfile). Scan token ketat
+   `github_pat_[A-Za-z0-9_]{20,}` → push pengganti via gh-upload.mjs ✓.
+
+## 42. loader.to sesi ini: koneksi mati diam-diam — bukan bug script
+
+- Gejala: 3x proses download (node & curl) mati tanpa error di 90-151MB;
+  pola ±75-100 detik per koneksi. Server savenow.to TIDAK dukung Range
+  (GET Range diabaikan → stream penuh dari byte 0; resume mustahil).
+- Solusi yang jalan: **buat sesi download BARU** (ajax/download.php lagi)
+  → dapet server acak (leo3 mati di 151MB; **emma18** lolos full 159MB).
+  Kalau mati lagi, ulangi start sampai kena server yang seumur hidup.
+- TIP Diagnosis: `curl -D - -o /dev/null -H "Range: bytes=0-1023" <url>`
+  dengan timeout — kalau hang/streaming penuh = server abaikan Range.
+  Jangan tarik kesimpulan dari `alive=0` saja: **cek dulu ukuran file vs
+  bitrate** — sesi ini curl "keluar" karena file SELESAI (159,109,120
+  bytes = 1143.33s x 1.11Mbps persis), bukan mati. ffprobe .part dgn
+  moov di depan langsung kasih durasi penuh.
+- Video 1143.33s 720p **CFR 24fps asli** (27.439 paket 0 error) — tanpa
+  re-encode. Whisper 0.94x → part-len 420 → 3 bagian (aman < 10 menit,
+  tidak perlu split paruh §36.3). Merge 2.797 kata mono 0 back-jump.
+
+## 43. Operasional 11 klip (rantai §40 dipakai ulang)
+
+- 11 klip full-coverage ucapan 0-1137.4s, semua batas ujung kalimat via
+  words-around; durasi 55-172.5 dtk. Prioritas render: vo2max (judul
+  kuat) → dokter-memangsa → breakup-gym → dst (urutan lengkap di
+  metadata.json).
+- Skrip agent chain dibuat ulang (sandbox fresh): scripts/finish-one.sh
+  (finalize → QA 3 titik dgn titik proporsional durasi + auto tetangga
+  LOW → upload → bersih + HAPUS klip lokal) & scripts/chain.sh (finish A
+  + render B budget sisa waktu; render log → file, tail saja ke stdout).
+- Pola panggilan stabil: klip ≤96 dtk selesai 1 panggilan render; klip
+  128-172 dtk butuh 2 panggilan (marker .clip-id resume pending). Exit
+  -9 di akhir panggilan setelah "semua pending selesai" = timeout tool
+  biasa, BUKAN gagal — cek dulu baris terakhir log sebelum ulang.
+- QA: hanya clip-06 ada 1 titik LOW, tetangga ±1s semua OK (micro-pause
+  §20.6 ke-N kalinya) — upload tetap jalan. clip-08 QA 3/3 langsung OK.
+- Upload semua via Contents API (7.4-23.0MB @ CRF 26 — batas §39 aman).
+  11 klip + metadata.json + README row terverifikasi di repo.
+
+## 44. Checklist penutupan sesi (semua ✓ sesi ini)
+
+zip kit v1.2 ter-push pengganti ✓ · 11 klip + metadata + README ✓ ·
+lokal klip dihapus pasca-upload ✓ · out/tmp/finalize dibersihkan ✓ ·
+transcript raw.json dipertahankan utk audit ✓ · PAT tetap hanya di
+work/.ghtoken (scan ketat sebelum tiap push) ✓.
