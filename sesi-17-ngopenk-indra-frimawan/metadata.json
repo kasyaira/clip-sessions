@@ -1,0 +1,102 @@
+{
+  "video": "https://youtu.be/GfpmP1HcniQ",
+  "judul": "#ngopenk OBROLAN SERIUS YANG SEDIKIT ABSURD BERSAMA INDRA FRIMAWAN!",
+  "channel": "Tirta PengPengPeng",
+  "durasiVideo": "19:03",
+  "tanggal": "2026-10-03",
+  "kit": "ofc-clip-kit v1.2 (background kertas stock CC0, badge source kanan-bawah)",
+  "jumlahKlip": 11,
+  "totalDurasiKlip": 1137.4,
+  "renderPrioritas": [
+    "clip-08",
+    "clip-11",
+    "clip-02",
+    "clip-07",
+    "clip-10",
+    "clip-04",
+    "clip-01",
+    "clip-05",
+    "clip-09",
+    "clip-03",
+    "clip-06"
+  ],
+  "clips": [
+    {
+      "id": "clip-01-persona-lawak-vs-indra-asli",
+      "start": 0.0,
+      "end": 127.66,
+      "dur": 127.7,
+      "topik": "Pembuka absurd + persona lawak Indra vs Indra asli yang serius"
+    },
+    {
+      "id": "clip-02-breakup-langsung-angkat-beban",
+      "start": 127.66,
+      "end": 216.49,
+      "dur": 88.8,
+      "topik": "Setelah putus April: langsung angkat beban, bukan melampiaskan ke arah lain"
+    },
+    {
+      "id": "clip-03-home-gym-pt-dulu-disiplin",
+      "start": 216.49,
+      "end": 271.5,
+      "dur": 55.0,
+      "topik": "Metode: home gym + PT di rumah dulu sampai disiplin, baru gym"
+    },
+    {
+      "id": "clip-04-pede-badan-morning-person",
+      "start": 271.5,
+      "end": 352.48,
+      "dur": 81.0,
+      "topik": "Perubahan: lebih pede sama badan (pantai tanpa baju) + tidur jadi pagi"
+    },
+    {
+      "id": "clip-05-ilmu-naik-massa-otot",
+      "start": 352.48,
+      "end": 525.0,
+      "dur": 172.5,
+      "topik": "Hypertrophy, split latihan, pola makan bulking (telor, padang, gainer)"
+    },
+    {
+      "id": "clip-06-tidak-suka-manis",
+      "start": 525.0,
+      "end": 633.99,
+      "dur": 109.0,
+      "topik": "Tidak suka manis, minum cuma air putih, alkohol sesekali koktel"
+    },
+    {
+      "id": "clip-07-masih-rokok-sebungkus",
+      "start": 633.99,
+      "end": 698.0,
+      "dur": 64.0,
+      "topik": "Pengakuan jujur: masih merokok sebungkus sehari (filter)"
+    },
+    {
+      "id": "clip-08-berhenti-2022-vo2max-naik",
+      "start": 698.0,
+      "end": 835.43,
+      "dur": 137.4,
+      "topik": "Riwayat merokok + berhenti 2022: VO2max naik 38 ke 58 setelah stop"
+    },
+    {
+      "id": "clip-09-etika-perokok-tidak-resek",
+      "start": 835.43,
+      "end": 903.8,
+      "dur": 68.4,
+      "topik": "Etika perokok: cuma ngerokok di tempat yang disediakan / di rumah"
+    },
+    {
+      "id": "clip-10-kebutuhan-vs-lifestyle",
+      "start": 903.8,
+      "end": 1041.4,
+      "dur": 137.6,
+      "topik": "Merokok kebutuhan atau lifestyle? habit habis makan + cari substitusi"
+    },
+    {
+      "id": "clip-11-dokter-jangan-memangsa-pasien",
+      "start": 1041.4,
+      "end": 1137.4,
+      "dur": 96.0,
+      "topik": "Dokter yang tidak memangsa pasien; perokok lebih nyaman didampingi pelan-pelan"
+    }
+  ]
+}
